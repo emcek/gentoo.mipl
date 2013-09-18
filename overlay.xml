@@ -4,13 +4,13 @@
   <repo quality="experimental" status="unofficial">
     <name>mipl</name>
     <description>experimental ebuilds from mipl</description>
-    <homepage>http://github.com/emcek/gentoo.mipl</homepage>
+    <homepage>https://github.com/emcek/gentoo.mipl</homepage>
     <owner>
       <email>mplichta@gmail.com</email>
       <name>Michal Plichta</name>
     </owner>
     <source type="git">git://github.com/emcek/gentoo.mipl.git</source>
-    <source type="git">http://github.com/emcek/gentoo.mipl.git</source>
-    <feed>http://github.com/feeds/emcek/commits/gentoo.mipl/master</feed>
+    <source type="git">https://github.com/emcek/gentoo.mipl.git</source>
+    <feed>https://github.com/feeds/emcek/commits/gentoo.mipl/master</feed>
   </repo>
 </repositories>
