@@ -1,0 +1,11 @@
+--- decibel-audio-player-1.04.ebuild	2013-09-16 10:48:44.216891984 +0200
++++ decibel-audio-player-1.04-r1.ebuild	2013-09-16 10:50:37.916894741 +0200
+@@ -16,7 +16,7 @@
+ RDEPEND="media-libs/mutagen
+ 	dev-python/dbus-python
+ 	dev-python/gst-python:0.10
+-	dev-python/imaging
++	virtual/python-imaging
+ 	>=media-plugins/gst-plugins-meta-0.10-r2:0.10
+ 	aac? ( media-plugins/gst-plugins-faad:0.10 )
+ 	cdda? ( || ( media-plugins/gst-plugins-cdio:0.10

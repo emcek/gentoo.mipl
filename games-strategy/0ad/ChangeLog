@@ -1,0 +1,35 @@
+# ChangeLog for games-strategy/0ad
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*0ad-12636_alpha11 (09 Sep 2012)
+
+  09 Sep 2012; Julian Ospald <hasufell@gentoo.org> -0ad-11339_alpha9.ebuild,
+  -0ad-11863_alpha10.ebuild, -0ad-11863_alpha10-r1.ebuild,
+  -files/0ad-11339_alpha9-fcollada-makefile.patch,
+  -files/0ad-11339_alpha9-test.patch, -files/0ad-11863_alpha10-gentoo.patch,
+  +0ad-12636_alpha11.ebuild, +files/0ad-12636_alpha11-gentoo.patch,
+  +files/0ad-12636_alpha11-pch.patch, 0ad-99999.ebuild:
+  version bump, remove old
+
+  01 Jul 2012; Julian Ospald <hasufell@gentoo.org> ChangeLog:
+  revision bump: bump to EAPI=4, respect flags, restructure build process to
+  avoid using update-workspaces.sh, fix test phase
+
+*0ad-11863_alpha10 (15 May 2012)
+
+  15 May 2012; Julian Ospald <hasufell@gentoo.org> +0ad-11863_alpha10.ebuild:
+  version bump
+
+  24 Apr 2012; hasufell <julian.ospald@googlemail.com> 0ad-11339_alpha9.ebuild,
+  0ad-99999.ebuild:
+  fix test phase (was referring to non-existent useflag)
+
+*0ad-99999 (14 Apr 2012)
+*0ad-11339_alpha9 (14 Apr 2012)
+
+  14 Apr 2012; hasufell <julian.ospald@googlemail.com>
+  +files/11339_alpha9-fcollada-makefile.patch, +0ad-11339_alpha9.ebuild,
+  +0ad-99999.ebuild, +metadata.xml:
+  New Ebuild for bug 278541 thanks to mgorny and binki
+
