@@ -2,29 +2,30 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
-LANGS="cs de fi fr he it ja nl pl pt pt_BR ru tr zh_CN zh_TW"
+EAPI=4
 
 inherit eutils qt4-r2
 
-MY_P=RockboxUtility-v${PV}
-
 DESCRIPTION="Rockbox opensource firmware manager for mp3 players"
 HOMEPAGE="http://www.rockbox.org/wiki/RockboxUtility"
-SRC_URI="http://download.rockbox.org/rbutil/source/${MY_P}-src.tar.bz2"
+SRC_URI="http://download.rockbox.org/${PN}/source/RockboxUtility-v${PV}-src.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug"
+IUSE=""
 
 RDEPEND="media-libs/speex
-	x11-libs/qt-core:4
-	x11-libs/qt-gui:4
-	virtual/libusb:0"
+		dev-qt/qtcore:4
+		dev-qt/qtgui:4
+		virtual/libusb:0"
 DEPEND="${RDEPEND}"
 
-S=${WORKDIR}/${MY_P}/${PN}/${PN}qt
+S=${WORKDIR}/RockboxUtility-v${PV}/${PN}/${PN}qt
+
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-accessibility.patch
+}
 
 src_configure() {
 	# generate binary translations
@@ -35,7 +36,7 @@ src_configure() {
 }
 
 src_install() {
-	newbin RockboxUtility ${PN} || die
-	newicon icons/rockbox-48.png ${PN}.png || die
+	newbin RockboxUtility ${PN}
+	newicon icons/rockbox-256.png ${PN}.png
 	make_desktop_entry ${PN} "Rockbox Utility"
 }
