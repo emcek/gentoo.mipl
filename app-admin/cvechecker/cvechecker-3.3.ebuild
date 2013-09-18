@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gentoo.overlay/app-admin/cvechecker/cvechecker-3.4.ebuild at master · sjvermeu/gentoo.overlay · GitHub</title>
+        <title>gentoo.overlay/app-admin/cvechecker/cvechecker-3.3.ebuild at master · sjvermeu/gentoo.overlay · GitHub</title>
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
     <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
     <meta property="og:image" content="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
-    <meta name="hostname" content="github-fe119-cp1-prd.iad.github.net">
+    <meta name="hostname" content="github-fe112-cp1-prd.iad.github.net">
     <meta name="ruby" content="ruby 1.9.3p194-tcs-github-tcmalloc (2012-05-25, TCS patched 2012-05-27, GitHub v1.0.36) [x86_64-linux]">
     <link rel="assets" href="https://github.global.ssl.fastly.net/">
     <link rel="xhr-socket" href="/_sockets" />
@@ -26,7 +26,7 @@
     <meta name="msapplication-TileImage" content="/windows-tile.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="selected-link" value="repo_source" data-pjax-transient />
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="C2FB77C9:3708:E666F3:5239AAE6" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="C2FB77C9:3707:9562CB:5239AAD6" name="octolytics-dimension-request_id" />
     
 
     
@@ -34,7 +34,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="te9j/bjOW/EWFuUVz/GK/lWFdkJvCFFk0FYkhpbVgio=" name="csrf-token" />
+<meta content="dK4/YBdkFMgjmJF9IC3MBu9SBZzYj8ieEYYcdaLnhSk=" name="csrf-token" />
 
     <link href="https://github.global.ssl.fastly.net/assets/github-a1b8d7acf8e42ee53257e820a8560262dda06210.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://github.global.ssl.fastly.net/assets/github2-39d2e95d227a4c6431acf86b1a69fe82d601ae86.css" media="all" rel="stylesheet" type="text/css" />
@@ -47,7 +47,7 @@
       
       <meta http-equiv="x-pjax-version" content="f35c0eabaccc9a590c302dd0830401ee">
 
-        <link data-pjax-transient rel='permalink' href='/sjvermeu/gentoo.overlay/blob/34b423a3f7fdf18764511b0fe748714862ec7943/app-admin/cvechecker/cvechecker-3.4.ebuild'>
+        <link data-pjax-transient rel='permalink' href='/sjvermeu/gentoo.overlay/blob/34b423a3f7fdf18764511b0fe748714862ec7943/app-admin/cvechecker/cvechecker-3.3.ebuild'>
   <meta property="og:title" content="gentoo.overlay"/>
   <meta property="og:type" content="githubog:gitrepository"/>
   <meta property="og:url" content="https://github.com/sjvermeu/gentoo.overlay"/>
@@ -80,7 +80,7 @@
 
     <div class="header-actions">
         <a class="button primary" href="/signup">Sign up</a>
-      <a class="button" href="/login?return_to=%2Fsjvermeu%2Fgentoo.overlay%2Fblob%2Fmaster%2Fapp-admin%2Fcvechecker%2Fcvechecker-3.4.ebuild">Sign in</a>
+      <a class="button" href="/login?return_to=%2Fsjvermeu%2Fgentoo.overlay%2Fblob%2Fmaster%2Fapp-admin%2Fcvechecker%2Fcvechecker-3.3.ebuild">Sign in</a>
     </div>
 
     <div class="command-bar js-command-bar  in-repository">
@@ -308,8 +308,8 @@
           
 
 
-<!-- blob contrib key: blob_contributors:v21:d3ba181a557aa1c973a734573d4f020b -->
-<!-- blob contrib frag key: views10/v8/blob_contributors:v21:d3ba181a557aa1c973a734573d4f020b -->
+<!-- blob contrib key: blob_contributors:v21:d56772e50a1a49e1dd6f0555d7ab9324 -->
+<!-- blob contrib frag key: views10/v8/blob_contributors:v21:d56772e50a1a49e1dd6f0555d7ab9324 -->
 
 <p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
 
@@ -360,7 +360,7 @@
 
             <div class="select-menu-item js-navigation-item selected">
               <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/sjvermeu/gentoo.overlay/blob/master/app-admin/cvechecker/cvechecker-3.4.ebuild" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" data-skip-pjax="true" rel="nofollow" title="master">master</a>
+              <a href="/sjvermeu/gentoo.overlay/blob/master/app-admin/cvechecker/cvechecker-3.3.ebuild" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" data-skip-pjax="true" rel="nofollow" title="master">master</a>
             </div> <!-- /.select-menu-item -->
         </div>
 
@@ -381,19 +381,35 @@
 </div> <!-- /.select-menu -->
 
   <div class="breadcrumb">
-    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">gentoo.overlay</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay/tree/master/app-admin" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">app-admin</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay/tree/master/app-admin/cvechecker" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">cvechecker</span></a></span><span class="separator"> / </span><strong class="final-path">cvechecker-3.4.ebuild</strong> <span class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="app-admin/cvechecker/cvechecker-3.4.ebuild" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">gentoo.overlay</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay/tree/master/app-admin" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">app-admin</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/sjvermeu/gentoo.overlay/tree/master/app-admin/cvechecker" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">cvechecker</span></a></span><span class="separator"> / </span><strong class="final-path">cvechecker-3.3.ebuild</strong> <span class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="app-admin/cvechecker/cvechecker-3.3.ebuild" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
   </div>
 </div>
 
 
-  <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/sjvermeu/gentoo.overlay/contributors/master/app-admin/cvechecker/cvechecker-3.4.ebuild">
-    Fetching contributors…
+  
+  <div class="commit file-history-tease">
+    <img class="main-avatar" height="24" src="https://2.gravatar.com/avatar/a163d8bce08d529a0419c8765766c3b6?d=https%3A%2F%2Fidenticons.github.com%2Fcb7249dffe5bc4ff8a02a3bd90c6248e.png&amp;s=140" width="24" />
+    <span class="author"><a href="/sjvermeu" rel="author">sjvermeu</a></span>
+    <time class="js-relative-date" datetime="2013-09-16T06:14:15-07:00" title="2013-09-16 06:14:15">September 16, 2013</time>
+    <div class="commit-title">
+        <a href="/sjvermeu/gentoo.overlay/commit/d7b4b0aa1ed574f52af06a3e1cbd6c0e6d22e69a" class="message" data-pjax="true" title="Set masters">Set masters</a>
+    </div>
 
     <div class="participation">
-      <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
-      <p class="loader-error">Cannot retrieve contributors at this time</p>
+      <p class="quickstat"><a href="#blob_contributors_box" rel="facebox"><strong>1</strong> contributor</a></p>
+      
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+        <li class="facebox-user-list-item">
+          <img height="24" src="https://2.gravatar.com/avatar/a163d8bce08d529a0419c8765766c3b6?d=https%3A%2F%2Fidenticons.github.com%2Fcb7249dffe5bc4ff8a02a3bd90c6248e.png&amp;s=140" width="24" />
+          <a href="/sjvermeu">sjvermeu</a>
+        </li>
+      </ul>
     </div>
   </div>
+
 
 <div id="files" class="bubble">
   <div class="file">
@@ -408,9 +424,9 @@
         <div class="button-group">
               <a class="minibutton disabled js-entice" href=""
                  data-entice="You must be signed in to make or propose changes">Edit</a>
-          <a href="/sjvermeu/gentoo.overlay/raw/master/app-admin/cvechecker/cvechecker-3.4.ebuild" class="button minibutton " id="raw-url">Raw</a>
-            <a href="/sjvermeu/gentoo.overlay/blame/master/app-admin/cvechecker/cvechecker-3.4.ebuild" class="button minibutton ">Blame</a>
-          <a href="/sjvermeu/gentoo.overlay/commits/master/app-admin/cvechecker/cvechecker-3.4.ebuild" class="button minibutton " rel="nofollow">History</a>
+          <a href="/sjvermeu/gentoo.overlay/raw/master/app-admin/cvechecker/cvechecker-3.3.ebuild" class="button minibutton " id="raw-url">Raw</a>
+            <a href="/sjvermeu/gentoo.overlay/blame/master/app-admin/cvechecker/cvechecker-3.3.ebuild" class="button minibutton ">Blame</a>
+          <a href="/sjvermeu/gentoo.overlay/commits/master/app-admin/cvechecker/cvechecker-3.3.ebuild" class="button minibutton " rel="nofollow">History</a>
         </div><!-- /.button-group -->
             <a class="minibutton danger empty-icon js-entice" href=""
                data-entice="You must be signed in and on a branch to make or propose changes">
@@ -467,7 +483,7 @@
 
             </td>
             <td class="blob-line-code">
-                    <div class="highlight"><pre><div class='line' id='LC1'><span class="c"># Copyright 1999-2013 Gentoo Foundation</span></div><div class='line' id='LC2'><span class="c"># Distributed under the terms of the GNU General Public License v2</span></div><div class='line' id='LC3'><span class="c"># $Header: /var/cvsroot/gentoo-x86/app-text/lv/lv-4.51-r1.ebuild,v 1.7 2010/01/23 11:29:38 aballier Exp $</span></div><div class='line' id='LC4'><br/></div><div class='line' id='LC5'><span class="nv">EAPI</span><span class="o">=</span>3</div><div class='line' id='LC6'><br/></div><div class='line' id='LC7'>inherit eutils</div><div class='line' id='LC8'><br/></div><div class='line' id='LC9'><span class="nv">DESCRIPTION</span><span class="o">=</span><span class="s2">&quot;Tool to match installed software against the list of CVE entries&quot;</span></div><div class='line' id='LC10'><span class="nv">HOMEPAGE</span><span class="o">=</span><span class="s2">&quot;http://cvechecker.sourceforge.net&quot;</span></div><div class='line' id='LC11'><span class="nv">SRC_URI</span><span class="o">=</span><span class="s2">&quot;mirror://sourceforge/${PN}/${P}.tar.gz&quot;</span></div><div class='line' id='LC12'><br/></div><div class='line' id='LC13'><span class="nv">LICENSE</span><span class="o">=</span><span class="s2">&quot;GPL-3&quot;</span></div><div class='line' id='LC14'><span class="nv">SLOT</span><span class="o">=</span><span class="s2">&quot;0&quot;</span></div><div class='line' id='LC15'><span class="nv">KEYWORDS</span><span class="o">=</span><span class="s2">&quot;~amd64 ~x86&quot;</span></div><div class='line' id='LC16'><span class="nv">IUSE</span><span class="o">=</span><span class="s2">&quot;sqlite mysql&quot;</span></div><div class='line' id='LC17'><br/></div><div class='line' id='LC18'><span class="nv">DEPEND</span><span class="o">=</span><span class="s2">&quot;sqlite? ( &gt;=dev-db/sqlite-3.6.23.1 )</span></div><div class='line' id='LC19'><span class="s2">	mysql? ( &gt;=dev-db/mysql-5.1.51 )</span></div><div class='line' id='LC20'><span class="s2">	&gt;=dev-libs/libconfig-1.3.2&quot;</span></div><div class='line' id='LC21'><span class="nv">RDEPEND</span><span class="o">=</span><span class="s2">&quot;${DEPEND}</span></div><div class='line' id='LC22'><span class="s2">	&gt;=dev-libs/libxslt-1.1.26&quot;</span></div><div class='line' id='LC23'><br/></div><div class='line' id='LC24'>pkg_setup<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC25'>	enewgroup cvechecker</div><div class='line' id='LC26'><span class="o">}</span></div><div class='line' id='LC27'><br/></div><div class='line' id='LC28'>src_configure<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC29'>	econf <span class="se">\</span></div><div class='line' id='LC30'>		<span class="k">$(</span>use_enable sqlite sqlite3<span class="k">)</span> <span class="se">\</span></div><div class='line' id='LC31'>		<span class="k">$(</span>use_enable mysql<span class="k">)</span> <span class="o">||</span> die <span class="s2">&quot;./configure failed&quot;</span></div><div class='line' id='LC32'><span class="o">}</span></div><div class='line' id='LC33'><br/></div><div class='line' id='LC34'>src_compile<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC35'>	emake <span class="o">||</span> die <span class="s2">&quot;compile failed&quot;</span></div><div class='line' id='LC36'><span class="o">}</span></div><div class='line' id='LC37'><br/></div><div class='line' id='LC38'>src_install<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC39'>	emake <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;${D}&quot;</span> install <span class="o">||</span> die</div><div class='line' id='LC40'>	emake <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;${D}&quot;</span> postinstall <span class="o">||</span> die</div><div class='line' id='LC41'><span class="o">}</span></div></pre></div>
+                    <div class="highlight"><pre><div class='line' id='LC1'><span class="c"># Copyright 1999-2012 Gentoo Foundation</span></div><div class='line' id='LC2'><span class="c"># Distributed under the terms of the GNU General Public License v2</span></div><div class='line' id='LC3'><span class="c"># $Header: /var/cvsroot/gentoo-x86/app-text/lv/lv-4.51-r1.ebuild,v 1.7 2010/01/23 11:29:38 aballier Exp $</span></div><div class='line' id='LC4'><br/></div><div class='line' id='LC5'><span class="nv">EAPI</span><span class="o">=</span>3</div><div class='line' id='LC6'><br/></div><div class='line' id='LC7'>inherit eutils</div><div class='line' id='LC8'><br/></div><div class='line' id='LC9'><span class="nv">DESCRIPTION</span><span class="o">=</span><span class="s2">&quot;Tool to match installed software against the list of CVE entries&quot;</span></div><div class='line' id='LC10'><span class="nv">HOMEPAGE</span><span class="o">=</span><span class="s2">&quot;http://cvechecker.sourceforge.net&quot;</span></div><div class='line' id='LC11'><span class="nv">SRC_URI</span><span class="o">=</span><span class="s2">&quot;mirror://sourceforge/${PN}/${P}.tar.gz&quot;</span></div><div class='line' id='LC12'><br/></div><div class='line' id='LC13'><span class="nv">LICENSE</span><span class="o">=</span><span class="s2">&quot;GPL-3&quot;</span></div><div class='line' id='LC14'><span class="nv">SLOT</span><span class="o">=</span><span class="s2">&quot;0&quot;</span></div><div class='line' id='LC15'><span class="nv">KEYWORDS</span><span class="o">=</span><span class="s2">&quot;~amd64 ~x86&quot;</span></div><div class='line' id='LC16'><span class="nv">IUSE</span><span class="o">=</span><span class="s2">&quot;sqlite mysql&quot;</span></div><div class='line' id='LC17'><br/></div><div class='line' id='LC18'><span class="nv">DEPEND</span><span class="o">=</span><span class="s2">&quot;sqlite? ( &gt;=dev-db/sqlite-3.6.23.1 )</span></div><div class='line' id='LC19'><span class="s2">	mysql? ( &gt;=dev-db/mysql-5.1.51 )</span></div><div class='line' id='LC20'><span class="s2">	&gt;=dev-libs/libconfig-1.3.2&quot;</span></div><div class='line' id='LC21'><span class="nv">RDEPEND</span><span class="o">=</span><span class="s2">&quot;${DEPEND}</span></div><div class='line' id='LC22'><span class="s2">	&gt;=dev-libs/libxslt-1.1.26&quot;</span></div><div class='line' id='LC23'><br/></div><div class='line' id='LC24'>pkg_setup<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC25'>	enewgroup cvechecker</div><div class='line' id='LC26'><span class="o">}</span></div><div class='line' id='LC27'><br/></div><div class='line' id='LC28'>src_configure<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC29'>	econf <span class="se">\</span></div><div class='line' id='LC30'>		<span class="k">$(</span>use_enable sqlite sqlite3<span class="k">)</span> <span class="se">\</span></div><div class='line' id='LC31'>		<span class="k">$(</span>use_enable mysql<span class="k">)</span> <span class="o">||</span> die <span class="s2">&quot;./configure failed&quot;</span></div><div class='line' id='LC32'><span class="o">}</span></div><div class='line' id='LC33'><br/></div><div class='line' id='LC34'>src_compile<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC35'>	emake <span class="o">||</span> die <span class="s2">&quot;compile failed&quot;</span></div><div class='line' id='LC36'><span class="o">}</span></div><div class='line' id='LC37'><br/></div><div class='line' id='LC38'>src_install<span class="o">()</span> <span class="o">{</span></div><div class='line' id='LC39'>	emake <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;${D}&quot;</span> install <span class="o">||</span> die</div><div class='line' id='LC40'>	emake <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">&quot;${D}&quot;</span> postinstall <span class="o">||</span> die</div><div class='line' id='LC41'><span class="o">}</span></div></pre></div>
             </td>
           </tr>
         </table>
@@ -511,7 +527,7 @@
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2013 <span title="0.03112s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2013 <span title="0.02098s from github-fe112-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>
