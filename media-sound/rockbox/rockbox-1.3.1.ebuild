@@ -16,9 +16,9 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="media-libs/speex
-		dev-qt/qtcore:4
-		dev-qt/qtgui:4
-		virtual/libusb:0"
+	dev-qt/qtcore:4
+	dev-qt/qtgui:4
+	virtual/libusb:0"
 DEPEND="${RDEPEND}"
 
 S=${WORKDIR}/RockboxUtility-v${PV}/${PN}/${PN}qt
