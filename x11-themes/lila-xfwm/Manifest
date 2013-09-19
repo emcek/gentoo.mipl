@@ -1,0 +1,8 @@
+DIST lila-xfwm-0.3.2.tar.bz2 25330 RMD160 c4779dbfb4e48862316ce27ddb6e0b83f6b9d9cd SHA1 855a5d18cdc563adba2ab36b43301f1e7dd3e3f2 SHA256 3cddb6f80067d9d922172beb2a7931e32056243eba9779b8dff6a68aedad0fa7
+EBUILD lila-xfwm-0.3.2.ebuild 521 RMD160 e257a1fc808300097e8cd81912fcb9b1fc253bce SHA1 aee24d7ee40a318c760e26eee7f270bb182dd520 SHA256 063cf206d25748a8380ab4dd77375e8f80cc76cc1f08eba24e4db55499986b7a
+MD5 2cd8ab04ca277253e11f7b85e0c7fca1 lila-xfwm-0.3.2.ebuild 521
+RMD160 e257a1fc808300097e8cd81912fcb9b1fc253bce lila-xfwm-0.3.2.ebuild 521
+SHA256 063cf206d25748a8380ab4dd77375e8f80cc76cc1f08eba24e4db55499986b7a lila-xfwm-0.3.2.ebuild 521
+MD5 020b0ea84291d21daeda42ed92ec9475 files/digest-lila-xfwm-0.3.2 247
+RMD160 ead9cb23e118ee8240f7e948d61f6bd8f27aab24 files/digest-lila-xfwm-0.3.2 247
+SHA256 ea0bb3c70b4745b4185d2ed7f71feef1caaa0c4e57fad4ab8a861ec592734953 files/digest-lila-xfwm-0.3.2 247

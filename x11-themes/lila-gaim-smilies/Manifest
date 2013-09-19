@@ -1,0 +1,8 @@
+DIST lila-gaim-smilies-0.34.tar.bz2 22394 RMD160 42ae44889d42bbd148fcff118eedff6f99b5d4ae SHA1 34cc6e43876ad797d2e48548a65d821f65193ece SHA256 b38e32e1433d4c2baa0fa746ca389fb1406e0d7707b81142dc44ac7986a6eac2
+EBUILD lila-gaim-smilies-0.34.ebuild 544 RMD160 ed53f16faa2c7845b4de28fbc4cdbf0dcf952199 SHA1 a2a8c723f1dad0828779ae5e34fa939bf86d7882 SHA256 4f150340fa5fcab360470252405a759df4532ea5c3a8d9dbeee91cc20627d89a
+MD5 aa5b29c68d3123ba20d1b82b02384b3e lila-gaim-smilies-0.34.ebuild 544
+RMD160 ed53f16faa2c7845b4de28fbc4cdbf0dcf952199 lila-gaim-smilies-0.34.ebuild 544
+SHA256 4f150340fa5fcab360470252405a759df4532ea5c3a8d9dbeee91cc20627d89a lila-gaim-smilies-0.34.ebuild 544
+MD5 6ac37ad0aef35af35ce1167d90f0c047 files/digest-lila-gaim-smilies-0.34 268
+RMD160 01162ad6055ce708e3c5e9db5c9e70e9ee77e4e7 files/digest-lila-gaim-smilies-0.34 268
+SHA256 a757f5b2bdef79527599ae05af2235886be8776b64d215b90ba018730d58e308 files/digest-lila-gaim-smilies-0.34 268

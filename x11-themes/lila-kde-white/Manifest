@@ -1,0 +1,8 @@
+DIST lila-kde-white-0.8.3.tar.bz2 13092824 RMD160 d8bbfffb893d4e2a30fd5e41a71c80cddc867fed SHA1 9f83b7f78f4d31b3376f3310e957fb50f8f435af SHA256 b5c7efc3d0d4dac01a20d1278f6ca7990dfe4aa448c34cdfaac4396946a64183
+EBUILD lila-kde-white-0.8.3.ebuild 502 RMD160 8273a726b7b069aa72424b9ee6ca8c178be9885b SHA1 ec8874c60a3b26253de7e084cfeba53336da7c93 SHA256 625c8fda61f2501ddcfe98522cea2cb6ba7ffb23347945005453a6da26a1cf7f
+MD5 85f92cec6af3b493a91ca57d4d5b8d6b lila-kde-white-0.8.3.ebuild 502
+RMD160 8273a726b7b069aa72424b9ee6ca8c178be9885b lila-kde-white-0.8.3.ebuild 502
+SHA256 625c8fda61f2501ddcfe98522cea2cb6ba7ffb23347945005453a6da26a1cf7f lila-kde-white-0.8.3.ebuild 502
+MD5 19f257fd75cb005345e541091a1f6c70 files/digest-lila-kde-white-0.8.3 271
+RMD160 cd87129d1d2902860d3922df14dccdc133365b98 files/digest-lila-kde-white-0.8.3 271
+SHA256 512df638a2a94cc9a7b09ce80a363bca213d665e18f0b2f40d4824b927862fbe files/digest-lila-kde-white-0.8.3 271

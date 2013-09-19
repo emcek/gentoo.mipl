@@ -1,0 +1,8 @@
+DIST lila-cursors-0.5.tar.bz2 67236 RMD160 8a56b0514dadd22ea1359d8d7d9fb4dd1b329497 SHA1 17debde94df250a1e4377d191595b018926d22c3 SHA256 be0d9f0137b5b559ef5b62183844525d2f07b2c3a0647e35cc8d6d01a79e9b3a
+EBUILD lila-cursors-0.5.ebuild 755 RMD160 e128c0c6f90cdf8c6cc5cafb46a885f5f92a02e2 SHA1 6976fcef25011739130cc0ce3ed9c5eb515bf597 SHA256 a168e649a511c70a1730d2ae65fcf45fcfe016af8ff1eeab3e56cea2f7c8193e
+MD5 ad89ae7ab1fae92c548bb0697742c9b4 lila-cursors-0.5.ebuild 755
+RMD160 e128c0c6f90cdf8c6cc5cafb46a885f5f92a02e2 lila-cursors-0.5.ebuild 755
+SHA256 a168e649a511c70a1730d2ae65fcf45fcfe016af8ff1eeab3e56cea2f7c8193e lila-cursors-0.5.ebuild 755
+MD5 58b6d140f8b40ee52027aca9fdd4d264 files/digest-lila-cursors-0.5 250
+RMD160 a274005bce648c716770f8aa5ecb544b49bb36cc files/digest-lila-cursors-0.5 250
+SHA256 5df0eecf1bdcd608f0dea1992df789cec055adb1693cd77add9f228acb1cff1c files/digest-lila-cursors-0.5 250

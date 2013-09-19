@@ -1,0 +1,8 @@
+DIST lila-kdm-red-0.2.tar.bz2 47947 RMD160 87f3fde91e61380fb3aa85a493a36e422ce17ded SHA1 b4216814d4d1aff1ffc3f8e8ab1ad9d30d9a748c SHA256 c1ce79d16469dd42edbc26006ec3c82ea4566ebc2e5751f9b6e38a6d6aa8dbb9
+EBUILD lila-kdm-red-0.2.ebuild 597 RMD160 9b0b79db65ddfbeb20fd80728c0fb3e4aee23ca8 SHA1 a968ee21b8a254f84a8d5179214f38cff2bec002 SHA256 75b24a73ec031d6ac6a7ed13f796f9e658af0077797dcc08738f00f35e39eb54
+MD5 7b11ac435b355265e40d2f964ac8ff8d lila-kdm-red-0.2.ebuild 597
+RMD160 9b0b79db65ddfbeb20fd80728c0fb3e4aee23ca8 lila-kdm-red-0.2.ebuild 597
+SHA256 75b24a73ec031d6ac6a7ed13f796f9e658af0077797dcc08738f00f35e39eb54 lila-kdm-red-0.2.ebuild 597
+MD5 84f784a4815e7392c725dc5f48fb1757 files/digest-lila-kdm-red-0.2 250
+RMD160 b3b880c023505ea00bdbe574bfdede5a273aa15b files/digest-lila-kdm-red-0.2 250
+SHA256 95a80f1cf97792e2b80ffa3befb4e07a3b2f5b8e075ebf775c13af268d183efd files/digest-lila-kdm-red-0.2 250

@@ -1,0 +1,8 @@
+DIST lila-xmms-0.1.tar.bz2 20326 RMD160 98ce0ce1a11d40beeeb07c7bc2cc26f5ab815cae SHA1 7057e355c70ec0f72fc4a15f38fd7d3641f2aa80 SHA256 567d39ab259c1aee69c1fb9529f47191eec7915c047d293ddabe26fb5dbac5be
+EBUILD lila-xmms-0.1.ebuild 522 RMD160 021f8cefa9fbeb8c73e3308ab97491aef39d8085 SHA1 6dec9154c460d6e0041e3fe2528e46c86aa42f29 SHA256 f5ea8cb1973dcf6695fccc60a8f7756875cb64d593a62e04edef3572a35b45a8
+MD5 76056eb667f3d6e5ada3157942518e7f lila-xmms-0.1.ebuild 522
+RMD160 021f8cefa9fbeb8c73e3308ab97491aef39d8085 lila-xmms-0.1.ebuild 522
+SHA256 f5ea8cb1973dcf6695fccc60a8f7756875cb64d593a62e04edef3572a35b45a8 lila-xmms-0.1.ebuild 522
+MD5 16ba59e2e13dbdb7e677a9378a69eab7 files/digest-lila-xmms-0.1 241
+RMD160 cf9faefb56bbb308c4d6f078369bdeb468fca746 files/digest-lila-xmms-0.1 241
+SHA256 21ee9cc143c70db5d18e394905c7d32ca9ce5c1f8ebeae7cfe15c96deda84e05 files/digest-lila-xmms-0.1 241

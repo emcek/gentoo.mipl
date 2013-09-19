@@ -1,0 +1,8 @@
+DIST lila-openbox-0.3.1.tar.bz2 10795 RMD160 a94afefcdde31cf2352e9a70120d2461d63aa919 SHA1 e83abc3a720f921026399ec3acead94f110ac826 SHA256 2a0943e110b1775b1c5e2d4291898e54e40ae89945b322c70e106974912ab4f7
+EBUILD lila-openbox-0.3.1.ebuild 546 RMD160 a9cef62875e65a2a15cf89aac51442a24ac0b1fa SHA1 2897342de5620d993095fed3b871dfc76af90e68 SHA256 3f37ebdfb01ad4b20bd1858bf2bf272e9218e60fae6ad4b25c459b1e5ff32f48
+MD5 579039efe1bd68c836518c08f57ac9fa lila-openbox-0.3.1.ebuild 546
+RMD160 a9cef62875e65a2a15cf89aac51442a24ac0b1fa lila-openbox-0.3.1.ebuild 546
+SHA256 3f37ebdfb01ad4b20bd1858bf2bf272e9218e60fae6ad4b25c459b1e5ff32f48 lila-openbox-0.3.1.ebuild 546
+MD5 b37ff332264f4d786f5de68511dce54d files/digest-lila-openbox-0.3.1 256
+RMD160 cb250a3ea069f548ba51a69f3ddf3bbeec4d8b36 files/digest-lila-openbox-0.3.1 256
+SHA256 0ca2e0d77bbea21297a61447743dc8691687cc06d762fbf605033a787629511d files/digest-lila-openbox-0.3.1 256
