@@ -14,7 +14,7 @@ SRC_URI="${HOMEPAGE}/files/tarballs/${P}.tar.bz2"
 
 DEPEND="|| ( >=kde-base/kdm-3.4 >=kde-base/kdebase-3.4 )"
 
-BASEDIR="$(kde-config --prefix)/share/apps/kdm/themes"
+BASEDIR="$(kde4-config --prefix)/share/apps/kdm/themes"
 src_install() {
         dodir ${BASEDIR}
         cp -R ${WORKDIR}/${PN}/* ${D}/${BASEDIR}

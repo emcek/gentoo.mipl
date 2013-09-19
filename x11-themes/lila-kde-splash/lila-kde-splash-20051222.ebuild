@@ -14,7 +14,7 @@ SRC_URI="http://download.berlios.de/lila-theme/${P}.tar.gz"
 
 DEPEND="|| ( >=kde-base/kdm-3.4 >=kde-base/kdebase-3.4 )"
 
-BASEDIR="$(kde-config --prefix)/share/apps/ksplash/Themes"
+BASEDIR="$(kde4-config --prefix)/share/apps/ksplash/Themes"
 src_install() {
         dodir ${BASEDIR}
         cp -R ${WORKDIR}/* ${D}/${BASEDIR}
