@@ -1,0 +1,62 @@
+# Copyright 1999-2013 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+
+*geek-sources-3.11.1 (15 Sep 2013)
+
+  15 Sep 2013; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  Bump sys-kernel/geek-sources-{3.2.50,3.4.61,3.10.11,3.11} -> sys-kernel/geek-sources-{3.2.51,3.4.62,3.10.12,3.11.1}
+
+*geek-sources-3.10.7 (19 Aug 2013)
+
+  19 Aug 2013; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  +geek-sources-3.10.7.ebuild
+  +geek-cjktty.eclass +geek-optimization.eclass
+
+*geek-sources-3.10.6 (12 Aug 2013)
+
+  12 Aug 2013; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  +geek-sources-3.10.6.ebuild
+  -linux-geek.eclass
+  +geek-aufs.eclass +geek-bfq.eclass +geek-bld.eclass +geek-brand.eclass +geek-build.eclass
+  +geek-ck.eclass +geek-deblob.eclass +geek-fedora.eclass +geek-fix.eclass +geek-gentoo.eclass
+  +geek-grsec.eclass +geek-ice.eclass +geek-linux.eclass +geek-lqx.eclass +geek-mageia.eclass
+  +geek-patch.eclass +geek-pax.eclass +geek-pf.eclass +geek-reiser4.eclass +geek-rt.eclass
+  +geek-spl.eclass +geek-squeue.eclass +geek-suse.eclass +geek-uksm.eclass +geek-upatch.eclass
+  +geek-utils.eclass +geek-zen.eclass +geek-zfs.eclass
+  Rename USE flags: branding --> brand.
+
+*geek-sources-3.9.2 (16 May 2013)
+
+  16 May 2013; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  +geek-sources-3.9.2.ebuild:
+  The release of "big update".
+  All ebuid`s with a version less than 3.9 removed.
+  Drop USE flags: debian, imq, pardus, phc, pld, rifs, rtai, scst, vserver, xenomai, zen.
+  Rename USE flags: genpatches --> gentoo, grsecurity --> grsec.
+  The following USE flags: aufs, bfq, fedora, gentoo, grsec, ice, mageia, suse - from now works like 9999 ebuild`s.
+
+*geek-sources-{3.5.7,3.6.11,3.7.1} (09 Jan 2013)
+
+  09 Jan 2013; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  -kernel-geek.eclass +geek-sources.eclass +linux-geek.eclass:
+  Now geek-sources-{3.5.7,3.6.11,3.7.1}.ebuild use geek-sources.eclass
+
+*geek-sources-3.4.{1,2,3} (21 Jun 2012)
+
+  21 Jun 2012; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  +kernel-geek.eclass:
+  Modified geek-sources-3.4.{1,2,3}.ebuild
+
+*geek-sources-{3.2.2,3.3-r2} (05 Feb 2012)
+
+  05 Feb 2012; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  Renaming fc-sources-{3.2.2,3.3-r2}.ebuild -> geek-sources-{3.2.2,3.3-r2}.ebuild:
+  From now on, will not the kernel with only Fedora patches.
+
+*fc-sources-2.6.38.4 (02 May 2011)
+
+  02 May 2011; Andrey Ovcharov (init_6) <sudormrfhalt@gmail.com>
+  +fc-sources-2.6.38.4.ebuild:
+  Initial release.
