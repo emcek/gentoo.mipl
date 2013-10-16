@@ -1,0 +1,25 @@
+From 760de38c54c316bfae070be05c1f26818aa1bc18 Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 9 Feb 2013 18:08:33 +0100
+Subject: [PATCH] Turn crash report sending off by default
+
+---
+ lightcrafts/src/com/lightcrafts/app/ExceptionDialog.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lightcrafts/src/com/lightcrafts/app/ExceptionDialog.java b/lightcrafts/src/com/lightcrafts/app/ExceptionDialog.java
+index a4986ba..0c12f9d 100644
+--- a/lightcrafts/src/com/lightcrafts/app/ExceptionDialog.java
++++ b/lightcrafts/src/com/lightcrafts/app/ExceptionDialog.java
+@@ -77,7 +77,7 @@ public class ExceptionDialog extends JOptionPane {
+         group.add(exitButton);
+ 
+         sendBox = new JCheckBox(SendMessage);
+-        sendBox.setSelected(true);
++        sendBox.setSelected(false);
+ 
+         JTextArea sendHelp = TextAreaFactory.createTextArea(SendHelp, 30);
+         sendHelp.setBackground((new JPanel()).getBackground());
+-- 
+1.8.1.2
+

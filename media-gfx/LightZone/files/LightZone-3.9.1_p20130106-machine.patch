@@ -1,0 +1,25 @@
+From ff50f91fa614c4284081081d4692f5aefe19993e Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 9 Feb 2013 05:13:55 +0100
+Subject: [PATCH 3/6] Fix machine detection
+
+---
+ lightcrafts/mk/platform.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lightcrafts/mk/platform.mk b/lightcrafts/mk/platform.mk
+index 33a4879..f8700ce 100644
+--- a/lightcrafts/mk/platform.mk
++++ b/lightcrafts/mk/platform.mk
+@@ -12,7 +12,7 @@ ifndef JAVA_HOME
+   $(error "JAVA_HOME" must be set)
+ endif
+ 
+-PROCESSOR:=		$(shell uname -p)
++PROCESSOR:=		$(shell uname -m)
+ TOOLS_BIN:=		$(abspath $(ROOT)/lightcrafts/tools/bin)
+ 
+ # Default to a normal (Unix) classpath seperator.
+-- 
+1.8.1.2
+

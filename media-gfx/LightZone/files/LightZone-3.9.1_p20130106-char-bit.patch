@@ -1,0 +1,25 @@
+From 4f58bfcffeba260f8a470d3f083b22c049f082c6 Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 9 Feb 2013 05:18:53 +0100
+Subject: [PATCH 5/6] Define CHAR_BIT
+
+---
+ lightcrafts/jnisrc/macstl/functional.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/lightcrafts/jnisrc/macstl/functional.h b/lightcrafts/jnisrc/macstl/functional.h
+index c24ca1b..47ad2be 100644
+--- a/lightcrafts/jnisrc/macstl/functional.h
++++ b/lightcrafts/jnisrc/macstl/functional.h
+@@ -50,6 +50,8 @@ inline float log2 (float lhs)	{ return logf (lhs) / 0.693147180559945309417f; }
+ inline double log2 (double lhs)	{ return log (lhs) / 0.693147180559945309417; }
+ #endif
+ 
++#define CHAR_BIT  8
++
+ namespace stdext
+ 	{
+ 	
+-- 
+1.8.1.2
+
