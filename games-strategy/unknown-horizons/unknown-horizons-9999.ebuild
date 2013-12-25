@@ -7,7 +7,7 @@ EAPI=5
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="sqlite"
 
-inherit git-2 distutils python
+inherit git-2 distutils-r1 python-r1
 
 DESCRIPTION="Anno-like real time strategy game"
 HOMEPAGE="http://unknown-horizons.org/"
