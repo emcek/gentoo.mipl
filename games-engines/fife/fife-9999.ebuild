@@ -2,11 +2,18 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="2"
+#EAPI="2"
 
-PYTHON_DEPEND="2"
+#PYTHON_DEPEND="2"
 
-inherit subversion python
+#inherit subversion python
+
+EAPI="5"
+
+PYTHON_COMPAT=( python2_7 )
+
+inherit subversion python-r1
+
 
 DESCRIPTION="Flexible Isometric Free Engine"
 HOMEPAGE="http://fifengine.de/"
