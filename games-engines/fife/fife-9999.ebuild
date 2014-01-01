@@ -2,23 +2,19 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-#EAPI="2"
-
-#PYTHON_DEPEND="2"
-
-#inherit subversion python
-
 EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit subversion python-r1
-
+inherit python-single-r1 subversion
 
 DESCRIPTION="Flexible Isometric Free Engine"
 HOMEPAGE="http://fifengine.de/"
 
 ESVN_REPO_URI="http://fife.svn.cvsdude.com/engine/trunk"
+#EGIT_REPO_URI="git://github.com/fifengine/fifengine.git"
+
+SRC_URI=""
 
 LICENSE="LGPL-2"
 
