@@ -29,6 +29,8 @@ RDEPEND="
 	media-libs/libpng:0
 	media-libs/libsdl[X,opengl,video]
 	net-libs/enet:1.3
+	net-libs/miniupnpc
+	net-libs/gloox
 	net-misc/curl
 	sys-libs/zlib
 	virtual/jpeg
