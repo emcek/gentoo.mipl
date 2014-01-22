@@ -11,7 +11,8 @@ HOMEPAGE="https://live.gnome.org/Pinpoint"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="examples +gstreamer +pdf"
+KEYWORDS=""
+IUSE="examples +gstreamer +pdf vim-syntax"
 SRC_URI=""
 SCM=git-2
 EGIT_BOOTSTRAP="./autogen.sh"
@@ -24,9 +25,11 @@ RDEPEND=">=media-libs/clutter-1.4:1.0
 	x11-libs/pango
 	x11-libs/gdk-pixbuf:2
 	gstreamer? ( >=media-libs/clutter-gst-1.3:1.0 )
-	pdf? ( gnome-base/librsvg:2 )"
-DEPEND="dev-util/pkgconfig
+	pdf? ( gnome-base/librsvg:2 )
+	vim-syntax? ( app-vim/pinpoint-syntax )"
+DEPEND="virtual/pkgconfig
 	${RDEPEND}"
+
 pkg_setup() {
 	G2CONF="${G2CONF}"
 }
@@ -37,9 +40,10 @@ src_unpack(){
 	cd "${S}"
 }
 
-src_prepare(){
-	gnome2_src_prepare
-}
+#src_prepare(){
+#	gnome2_src_prepare
+#}
+
 src_configure() {
 	# dax support is disabled because we don't have it in tree yet and it's
 	# experimental
