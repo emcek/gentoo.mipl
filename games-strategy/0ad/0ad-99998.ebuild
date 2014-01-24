@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=4
 
 WX_GTK_VER="2.8"
 
@@ -47,8 +47,14 @@ DEPEND="${RDEPEND}
 
 S=${WORKDIR}/trunk
 
-CHECKREQS_MEMORY="512M"
-CHECKREQS_DISK_BUILD="6G"
+pkg_setup() {
+	games_pkg_setup
+
+	if ! use pch ; then
+		eerror "pch useflag is potentially broken"
+		eerror "see http://trac.wildfiregames.com/ticket/1313"
+	fi
+}
 
 src_unpack() {
 	subversion_src_unpack
@@ -58,10 +64,9 @@ src_configure() {
 	cd build/workspaces || die
 
 	./update-workspaces.sh \
-		--with-system-nvtt \ 
+		--with-system-nvtt \
 		--with-system-enet \
-		--with-system-mozjs185 \ 
-		--with-system-miniupnpc \
+		--with-system-mozjs185 \
 		$(usex pch "" "--without-pch") \
 		$(usex test "" "--without-tests") \
 		$(usex audio "" "--without-audio") \
@@ -72,10 +77,6 @@ src_configure() {
 }
 
 src_compile() {
-	# build 3rd party fcollada
-#	emake -C libraries/source/fcollada/src
-
-	# build 0ad
 	emake -C build/workspaces/gcc verbose=1
 }
 
