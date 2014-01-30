@@ -12,3 +12,5 @@ SRC_URI="https://github.com/emcek/vim-pinpoint/archive/${PV}.tar.gz -> ${P}.tar.
 LICENSE="vim"
 KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris"
 
+S="${WORKDIR}/vim-pinpoint-${PV}"
+
