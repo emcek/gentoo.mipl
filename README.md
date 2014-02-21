@@ -1,4 +1,4 @@
 gentoo.mipl
 ===========
 
-Gentoo overlay by mipl. Copy of few ebuilds and my own.
+Gentoo overlay by emc (a.k.a. mipl). Copy of ebuilds done by others and few my own. Nothing special.
