@@ -1,0 +1,27 @@
+From dd77bb797ef2ee603b8908a1edda220e629fb3de Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 16 Feb 2013 07:48:17 +0100
+Subject: [PATCH] Fix .jar dependencies
+
+---
+ build.xml | 3 +-
+ 1 file changed, 2 insertions(+), 1 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index 9f78618..ae348aa 100644
+--- a/build.xml
++++ b/build.xml
+@@ -64,8 +64,9 @@
+ 
+ 	<path id="laf-widget.module.classpath">
+ 		<path refid="${module.jdk.classpath.laf-widget}" />
+-		<pathelement location="${laf-widget.lib.dir}/asm-all-2.2.2.jar" />
++		<pathelement location="${laf-widget.lib.dir}/asm.jar" />
++		<pathelement location="${laf-widget.lib.dir}/asm-commons.jar" />
+		<pathelement location="${laf-widget.lib.dir}/ant.jar" />
+ 	</path>
+ 
+ 	<patternset id="excluded.from.module.laf-widget" />
+-- 
+1.8.1.2
+
