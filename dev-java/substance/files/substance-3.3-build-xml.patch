@@ -1,0 +1,69 @@
+From 82f2ddc7193372efc78ba756a927f6e90962f88d Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 16 Feb 2013 08:39:06 +0100
+Subject: [PATCH] Fix build.xml
+
+---
+ substance-3.3/build.xml | 18 ++++++++++--------
+ 1 file changed, 10 insertions(+), 8 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index 01802cb..1664469 100644
+--- a/substance-3.3/build.xml
++++ b/substance-3.3/build.xml
+@@ -2,6 +2,7 @@
+ <project name="substance" default="all">
+ 
+ 	<!-- Compiler options -->
++	<property name="classpath.seperator" value=":" />
+ 	<property name="compiler.debug" value="on" />
+ 	<property name="compiler.generate.no.warnings" value="off" />
+ 	<property name="compiler.args" value="" />
+@@ -63,8 +64,9 @@
+ 		<path refid="${module.jdk.classpath.substance}" />
+ 		<pathelement location="${substance.lib.dir}/laf-plugin-50.jar" />
+ 		<pathelement location="${substance.lib.dir}/laf-widget.jar" />
+-		<pathelement location="${substance.lib.dir}/asm-all-2.2.2.jar" />
+-		<pathelement location="${substance.lib.dir}/forms-1.0.7.jar" />
++		<pathelement location="${substance.lib.dir}/asm-commons.jar" />
++		<pathelement location="${substance.lib.dir}/asm.jar" />
++		<pathelement location="${substance.lib.dir}/forms.jar" />
+ 		<pathelement location="${substance.lib.dir}/swingx.jar" />
+ 	</path>
+ 
+@@ -136,10 +138,10 @@
+ 	</target>
+ 
+ 	<!-- Augment tasks definition -->
+-	<taskdef name="delegate-augment" classname="org.jvnet.lafwidget.ant.AugmentTask" classpath="${substance.lib.dir}/laf-widget.jar;${substance.lib.dir}/asm-all-2.2.2.jar" />
+-	<taskdef name="laf-augment" classname="org.jvnet.lafwidget.ant.AugmentMainTask" classpath="${substance.lib.dir}/laf-widget.jar;${substance.lib.dir}/asm-all-2.2.2.jar" />
+-	<taskdef name="icon-ghosting-augment" classname="org.jvnet.lafwidget.ant.AugmentIconGhostingTask" classpath="${substance.lib.dir}/laf-widget.jar;${substance.lib.dir}/asm-all-2.2.2.jar" />
+-	<taskdef name="container-ghosting-augment" classname="org.jvnet.lafwidget.ant.AugmentContainerGhostingTask" classpath="${substance.lib.dir}/laf-widget.jar;${substance.lib.dir}/asm-all-2.2.2.jar" />
++	<taskdef name="delegate-augment" classname="org.jvnet.lafwidget.ant.AugmentTask" classpath="${substance.lib.dir}/laf-widget.jar${classpath.seperator}${substance.lib.dir}/asm-commons.jar${classpath.seperator}${substance.lib.dir}/asm.jar" />
++	<taskdef name="laf-augment" classname="org.jvnet.lafwidget.ant.AugmentMainTask" classpath="${substance.lib.dir}/laf-widget.jar${classpath.seperator}${substance.lib.dir}/asm-commons.jar${classpath.seperator}${substance.lib.dir}/asm.jar" />
++	<taskdef name="icon-ghosting-augment" classname="org.jvnet.lafwidget.ant.AugmentIconGhostingTask" classpath="${substance.lib.dir}/laf-widget.jar${classpath.seperator}${substance.lib.dir}/asm-commons.jar${classpath.seperator}${substance.lib.dir}/asm.jar" />
++	<taskdef name="container-ghosting-augment" classname="org.jvnet.lafwidget.ant.AugmentContainerGhostingTask" classpath="${substance.lib.dir}/laf-widget.jar${classpath.seperator}${substance.lib.dir}/asm-commons.jar${classpath.seperator}${substance.lib.dir}/asm.jar" />
+ 
+ 	<target name="jar-bin" description="create runtime jar">
+ 		<delete file="${substance.drop.dir}/substance.jar" />
+@@ -157,7 +159,7 @@
+ 
+ 		<!-- Delegate augmentation -->
+ 		<delegate-augment verbose="true" pattern=".*UI\u002Eclass">
+-			<classpathset dir="${substance.output.dir}" />
++			<classpathset dir="${substance.output.dir}${classpath.separator}${substance.src.dir}" />
+ 		</delegate-augment>
+ 
+ 		<!-- Icon ghosting augmentation -->
+@@ -251,7 +253,7 @@
+ 	<target name="clean" depends="clean.module.substance" description="cleanup all" />
+ 
+ 	<target name="run">
+-		<java fork="true" classpath="${substance.drop.dir}/substance.jar;${substance.drop.dir}/substance-tst.jar;${substance.lib.dir}/substance-swingx.jar;${substance.lib.dir}/swingx-2007_01_25.jar" classname="test.Check">
++		<java fork="true" classpath="${substance.drop.dir}/substance.jar${classpath.seperator}${substance.drop.dir}/substance-tst.jar${classpath.seperator}${substance.lib.dir}/substance-swingx.jar${classpath.seperator}${substance.lib.dir}/swingx.jar" classname="test.Check">
+ 			<sysproperty key="substancelaf.useDecorations" value="" />
+ 		</java>
+ 	</target>
+-- 
+1.8.1.2
+
