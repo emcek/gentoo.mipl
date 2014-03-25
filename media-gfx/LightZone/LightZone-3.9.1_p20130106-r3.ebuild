@@ -24,7 +24,7 @@ COMMON_DEPEND="dev-java/javahelp:0
 	dev-java/substance:3.3"
 
 DEPEND="${COMMON_DEPEND}
-	dev-java/sun-jdk:1.7
+	dev-java/oracle-jdk-bin:1.7
 	app-text/htmltidy"
 RDEPEND="${COMMON_DEPEND}
 	|| ( dev-java/oracle-jdk-bin:1.7 dev-java/oracle-jdk-bin:1.7 )"

@@ -4,9 +4,9 @@
 
 EAPI=4
 
-JAVA_PKG_WANT_BUILD_VM="sun-jdk-1.6"
-JAVA_PKG_WANT_SOURCE="1.6"
-JAVA_PKG_WANT_TARGET="1.6"
+JAVA_PKG_WANT_BUILD_VM="oracle-jdk-bin-1.7"
+JAVA_PKG_WANT_SOURCE="1.7"
+JAVA_PKG_WANT_TARGET="1.7"
 
 inherit eutils flag-o-matic git-2 java-pkg-2 java-ant-2 toolchain-funcs
 
@@ -16,11 +16,11 @@ EGIT_REPO_URI="git://github.com/xmw/${PN}.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="dev-java/sun-jai-bin
-	dev-java/sun-jdk:1.6
+	dev-java/oracle-jdk-bin:1.7
 	sys-libs/zlib"
 DEPEND="${RDEPEND}
 	app-text/recode
