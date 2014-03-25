@@ -1,0 +1,31 @@
+From cc1ee1f8752f41db9b1fbc9e3b51c9ffeeee96fb Mon Sep 17 00:00:00 2001
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 16 Feb 2013 19:53:55 +0100
+Subject: [PATCH] Fix access in BasicMonthViewUI for
+ org.jvnet.substance.swingx.SubstanceMonthViewUI
+
+---
+ src/java/org/jdesktop/swingx/plaf/basic/BasicMonthViewUI.java | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/src/java/org/jdesktop/swingx/plaf/basic/BasicMonthViewUI.java b/src/java/org/jdesktop/swingx/plaf/basic/BasicMonthViewUI.java
+index d42abb2..75e2091 100644
+--- a/src/java/org/jdesktop/swingx/plaf/basic/BasicMonthViewUI.java
++++ b/src/java/org/jdesktop/swingx/plaf/basic/BasicMonthViewUI.java
+@@ -84,8 +84,11 @@ public class BasicMonthViewUI extends MonthViewUI {
+     private MouseListener mouseListener;
+     private MouseMotionListener mouseMotionListener;
+     private Handler handler;
+-    private ImageIcon monthUpImage;
+-    private ImageIcon monthDownImage;
++
++    // "protected" needed for org.jvnet.substance.swingx.SubstanceMonthViewUI
++    protected ImageIcon monthUpImage;
++    protected ImageIcon monthDownImage;
++
+     private Rectangle dirtyRect = new Rectangle();
+     private Rectangle bounds = new Rectangle();
+     private Font derivedFont;
+-- 
+1.8.1.2
+
