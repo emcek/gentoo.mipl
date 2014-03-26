@@ -12,7 +12,7 @@ SRC_URI="http://www.hartwork.org/public/${P}.tar.bz2"
 # i.e. a snapshot of https://svn.java.net/svn/substance~svn/tags/release_5_3_reykjavik/
 
 LICENSE="BSD CC-BY-SA-2.5"  # TODO have a closer look
-SLOT="0"
+SLOT="5.3"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 

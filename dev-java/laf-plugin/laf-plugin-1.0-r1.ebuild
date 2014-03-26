@@ -6,13 +6,13 @@ EAPI="3"
 
 inherit java-pkg-2 java-ant-2
 
-DESCRIPTION="Swing look-and-feel library"
-HOMEPAGE="https://github.com/kirillcool/substance"
+DESCRIPTION="Plugin framework for look-and-feels"
+HOMEPAGE="http://java.net/projects/laf-plugin"
 SRC_URI="http://www.hartwork.org/public/${P}.tar.bz2"
-# i.e. a snapshot of https://svn.java.net/svn/substance~svn/tags/release_5_3_reykjavik/
+# i.e. a snapshot of https://svn.java.net/svn/laf-plugin~svn/tags/release_1_0_vile_weed/
 
-LICENSE="BSD CC-BY-SA-2.5"  # TODO have a closer look
-SLOT="5.3"
+LICENSE="BSD"
+SLOT="1.0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
@@ -20,20 +20,21 @@ DEPEND=">=virtual/jdk-1.7"
 RDEPEND=">=virtual/jre-1.7"
 
 src_prepare() {
+	mv build{5.0,}.xml || die
+
 	# Fix java home
 	sed \
-		-e "s|^jdk.home=.*|jdk.home=${JAVA_HOME}|" \
-		-i build.properties || die
+		-e 's|\(<property name="jdk\.home\.java_version_7\.0" value="\)[^"]\+\(" />\)|\1'"${JAVA_HOME}\2|" \
+		-i build.xml || die
 
 	# Remove hard-coded memory limits
 	sed \
 		-e 's|memoryMaximumSize="[^"]*" *||g' \
 		-i build.xml || die
 
-	ewarn "These .jar files might still need to be unbundled:"
-	ewarn "$(find . -name '*.jar' -print)"
-
 	java-pkg-2_src_prepare
+
+	mkdir -p build/classes50 || die
 }
 
 src_compile() {
@@ -41,5 +42,6 @@ src_compile() {
 }
 
 src_install() {
-	java-pkg_dojar ./drop/substance*.jar || die
+	java-pkg_newjar drop/laf-plugin-50.jar laf-plugin.jar || die
+	dodoc www/index.html || die
 }
