@@ -43,7 +43,7 @@ src_prepare() {
 	java-pkg_jar-from asm-2.2 asm.jar ${P}/lib/asm.jar || die
 	java-pkg_jar-from asm-2.2 asm-commons.jar ${P}/lib/asm-commons.jar || die
 	java-pkg_jar-from jgoodies-forms forms.jar ${P}/lib/forms.jar || die
-	java-pkg_jar-from swingx-0.8 swingx.jar ${P}/lib/swingx.jar || die
+	java-pkg_jar-from swingx-1.6 swingx.jar ${P}/lib/swingx.jar || die
 
 	# Bypass ant for substance-swingx
 	rm ${SUBX_P}/build.xml || die
