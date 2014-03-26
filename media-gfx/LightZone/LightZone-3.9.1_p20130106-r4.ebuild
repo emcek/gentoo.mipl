@@ -16,7 +16,7 @@ SRC_URI="http://www.hartwork.org/public/${P}.tar.xz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 COMMON_DEPEND="dev-java/javahelp:0
