@@ -21,7 +21,7 @@ KEYWORDS=""
 IUSE="+audio editor fam pch test"
 
 RDEPEND="
-	~dev-lang/spidermonkey-1.8.5
+	dev-lang/spidermonkey:24
 	dev-libs/boost
 	dev-libs/libxml2
 	!games-strategy/0ad-data
