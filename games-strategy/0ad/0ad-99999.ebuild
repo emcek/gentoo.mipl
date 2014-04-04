@@ -60,7 +60,7 @@ src_configure() {
 	./update-workspaces.sh \
 		--with-system-nvtt \ 
 		--with-system-enet \
-		--with-system-mozjs185 \ 
+		--with-system-mozjs24 \ 
 		--with-system-miniupnpc \
 		$(usex pch "" "--without-pch") \
 		$(usex test "" "--without-tests") \
