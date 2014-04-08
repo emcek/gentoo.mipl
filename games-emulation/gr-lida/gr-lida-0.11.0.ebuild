@@ -19,6 +19,8 @@ IUSE="dosbox scummvm"
 
 DEPEND="dev-qt/qtgui:4
 		dev-qt/qtsql:4[sqlite]
+		media-libs/phonon
+		app-text/poppler:=[qt4]
 		dosbox? ( games-emulation/dosbox )
 		scummvm? ( games-engines/scummvm )"
 RDEPEND="${DEPEND}"
