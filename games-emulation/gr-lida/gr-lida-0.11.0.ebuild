@@ -23,8 +23,8 @@ DEPEND="dev-qt/qtgui:4
 		scummvm? ( games-engines/scummvm )"
 RDEPEND="${DEPEND}"
 
-S=${WORKDIR}/${MY_P}
-#S="${WORKDIR}/Monthy-${PN}-d686834"
+#S=${WORKDIR}/${MY_P}
+S="${WORKDIR}/Monthy-${PN}-0bdade8"
 
 pkg_postinst(){
 	elog "The GUI is by default in Spanish."
