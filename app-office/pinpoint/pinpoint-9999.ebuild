@@ -24,7 +24,9 @@ RDEPEND=">=media-libs/clutter-1.4:1.0
 	>=x11-libs/cairo-1.9.4
 	x11-libs/pango
 	x11-libs/gdk-pixbuf:2
-	gstreamer? ( >=media-libs/clutter-gst-1.3:1.0 )
+	>=media-libs/clutter-gtk-1.4 
+	>=media-libs/clutter-gst-1.3:1.0
+	>=dev-ruby/ruby-gdkpixbuf2-2.0.0
 	pdf? ( gnome-base/librsvg:2 )
 	vim-syntax? ( app-vim/pinpoint-syntax )"
 DEPEND="virtual/pkgconfig
