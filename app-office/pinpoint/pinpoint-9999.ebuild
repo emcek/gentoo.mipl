@@ -20,15 +20,15 @@ EGIT_REPO_URI="http://git.gnome.org/browse/pinpoint"
 
 # rsvg is used for svg-in-pdf -- clubbing it under pdf for now
 RDEPEND=">=media-libs/clutter-1.4:1.0
-	>=dev-libs/glib-2.28:2
-	>=x11-libs/cairo-1.9.4
-	x11-libs/pango
-	x11-libs/gdk-pixbuf:2
-	>=media-libs/clutter-gst-1.3:1.0
-	pdf? ( gnome-base/librsvg:2 )
-	vim-syntax? ( app-vim/pinpoint-syntax )"
+		>=dev-libs/glib-2.28:2
+		>=x11-libs/cairo-1.9.4
+		x11-libs/pango
+		x11-libs/gdk-pixbuf:2
+		gstreamer? ( >=media-libs/clutter-gst-2.0:2.0 )
+		pdf? ( gnome-base/librsvg:2 )
+		vim-syntax? ( app-vim/pinpoint-syntax )"
 DEPEND="virtual/pkgconfig
-	${RDEPEND}"
+		${RDEPEND}"
 
 pkg_setup() {
 	G2CONF="${G2CONF}"
