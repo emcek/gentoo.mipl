@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst
+DEPEND==dev-lang/python-3*
+DESCRIPTION=GTK+ based utility to parse the contents of elogs created by Portage
+EAPI=3
+HOMEPAGE=http://sourceforge.net/projects/elogviewer/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/portage-2.1 dev-python/pyside dev-python/PyQt4 =dev-lang/python-3*
+SLOT=0
+SRC_URI=mirror://sourceforge/elogviewer/elogviewer-2.2.tar.gz
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	python	be9965681d83c3980660a2660ac95e95	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_md5_=7ebd13fb8b56a299b505cce677e0c0b6

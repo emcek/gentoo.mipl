@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/boost dev-python/pyyaml media-libs/libsdl media-libs/sdl-ttf media-libs/sdl-image[png] media-libs/libvorbis media-libs/libogg media-libs/openal sys-libs/zlib x11-libs/libXcursor x11-libs/libXext dev-games/guichan[sdl,opengl] virtual/opengl virtual/glu dev-lang/swig =dev-lang/python-2.7* dev-util/scons
+DESCRIPTION=Flexible Isometric Free Engine, 2D
+EAPI=3
+HOMEPAGE=http://fifengine.de
+IUSE=debug profile
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost dev-python/pyyaml media-libs/libsdl media-libs/sdl-ttf media-libs/sdl-image[png] media-libs/libvorbis media-libs/libogg media-libs/openal sys-libs/zlib x11-libs/libXcursor x11-libs/libXext dev-games/guichan[sdl,opengl] virtual/opengl virtual/glu =dev-lang/python-2.7*
+SLOT=0
+SRC_URI=http://downloads.sourceforge.net/project/fife/active/src/fife-0.3.3.tar.gz
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	python	be9965681d83c3980660a2660ac95e95	scons-utils	988e24b9e2e4642189b4e97c03e5ae71	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	versionator	a8a3963967d6140be9a14b08bb8f047f
+_md5_=166886ca279a79a035ab1247c08928e8

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
+DEPEND=dev-games/mygui dev-libs/tinyxml media-libs/openal virtual/ffmpeg sci-physics/bullet launcher? ( app-arch/unshield dev-qt/qtcore dev-qt/qtgui ) opencs? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtxmlpatterns ) dev-games/ogre[boost,cg,freeimage,opengl,threads,zip] dev-libs/boost:=[threads] media-libs/libsdl2 test? ( dev-cpp/gmock[tr1=] dev-cpp/gtest[tr1=] ) sys-devel/make >=dev-util/cmake-2.8.9 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Unofficial open source engine reimplementation of the game Morrowind
+EAPI=5
+HOMEPAGE=https://openmw.org/
+IUSE=+launcher minimal +opencs profile test +tr1
+LICENSE=GPL-3 MIT BitstreamVera OFL-1.1
+RDEPEND=dev-games/mygui dev-libs/tinyxml media-libs/openal virtual/ffmpeg sci-physics/bullet launcher? ( app-arch/unshield dev-qt/qtcore dev-qt/qtgui ) opencs? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtxmlpatterns ) dev-games/ogre[boost,cg,freeimage,opengl,threads,zip] dev-libs/boost:=[threads] media-libs/libsdl2 games-misc/games-envd
+SLOT=0
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	cmake-utils	7798d4361fbdd043014e635a1753e076	eutils	af81d52c25ec93fbdff71e0efb0de7b7	flag-o-matic	9a539029fe1d390c1828ff633baf26b5	games	016d5de1968de77e56a90938ed6e5aba	git-r3	6b256c6cd82cd5989bcb82e80a0fbac9	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	a8a3963967d6140be9a14b08bb8f047f
+_md5_=825b82b8133b476c3f683f2168686b41

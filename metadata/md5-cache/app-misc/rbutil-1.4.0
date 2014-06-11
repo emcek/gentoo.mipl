@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=media-libs/speex dev-qt/qtcore:4 dev-qt/qtgui:4 virtual/libusb:0
+DESCRIPTION=Rockbox opensource firmware manager for mp3 players
+EAPI=4
+HOMEPAGE=http://www.rockbox.org/wiki/RockboxUtility
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/speex dev-qt/qtcore:4 dev-qt/qtgui:4 virtual/libusb:0
+SLOT=0
+SRC_URI=http://download.rockbox.org/rbutil/source/RockboxUtility-v1.4.0-src.tar.bz2
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	qmake-utils	6f4ff01a55830f6d86647dc56dfaf3a7	qt4-r2	25e4f17ed047d9242cb40b70acfb2943	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_md5_=8502b9a91e3762ed833c802e80064697
