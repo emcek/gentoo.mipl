@@ -47,26 +47,6 @@ src_prepare() {
 	epatch "${FILESDIR}/${P}-unbundle-libpng.patch"
 }
 
-#src_configure() {
-#	myesconsargs=(
-#		"PREFIX=/usr"
-#		"DESTDIR=${D}"
-#		$(use_scons debug --enable-debug)
-#		$(use_scons profile --enable-profile)
-#		$(use_scons !tinyxml --local-tinyxml)
-#		$(use_scons !fifechan --without-fifechan)
-#	)
-#	escons configure
-#}
-
-#src_compile() {
-#	escons
-#}
-
-#src_install() {
-#	escons install-python
-#}
-
 src_compile() {
 	local myesconsargs=(
 		$(usex debug "--enable-debug" "")
