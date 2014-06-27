@@ -11,7 +11,7 @@ HOMEPAGE="http://fifengine.github.io/fifechan/"
 SRC_URI=""
 EGIT_REPO_URI="git://github.com/fifengine/fifechan.git"
 
-LICENSE="LGPL 2.1"
+LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="allegro opengl"

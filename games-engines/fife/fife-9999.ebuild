@@ -33,7 +33,7 @@ RDEPEND=">=dev-libs/boost-1.33.1
 	media-libs/libpng:0
 	x11-libs/libXext
 	fifechan? ( >=games-engines/fifechan-0.1.0 )
-    dev-qt/qtcore:4
+	dev-qt/qtcore:4
 	dev-qt/qtgui:4
 	tinyxml? ( >=dev-libs/tinyxml-2.5.3 )"
 
@@ -67,10 +67,9 @@ src_prepare() {
 #	escons install-python
 #}
 
-
 src_compile() {
 	local myesconsargs=(
-    	$(usex debug "--enable-debug" "")
+		$(usex debug "--enable-debug" "")
 		$(usex fifechan "" "--disable-fifechan")
 	    $(usex profile "--enable-profile" "")
 		$(usex opengl "" "--disable-opengl")
@@ -83,4 +82,3 @@ src_compile() {
 src_install() {
 	scons install-python --python-prefix="${D}/$(python_get_sitedir)" --prefix="${D}/usr"
 }
-
