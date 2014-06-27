@@ -1,3 +1,8 @@
+<<<<<<<<<<<<<<<<<<<<<<< fife-0.3.3-fix-memory-leak.patch >>>>>>>>>>>>>>>>>>>>>>
+Fix memory leak
+
+Patch by: Michal Plichta.
+
 --- ./engine/core/eventchannel/eventchannel.i.orig	2013-01-03 21:42:16.041324952 +0000
 +++ ./engine/core/eventchannel/eventchannel.i	2013-01-03 21:44:34.871329004 +0000
 @@ -58,7 +58,7 @@
@@ -27,3 +32,5 @@
  	private:
  		MouseEvent();
  	};
+
+<<<<<<<<<<<<<<<<<<<<<<< fife-0.3.3-fix-memory-leak.patch >>>>>>>>>>>>>>>>>>>>>>
