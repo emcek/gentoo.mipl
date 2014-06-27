@@ -17,14 +17,13 @@ KEYWORDS="~amd64 ~ppc ~sparc ~x86 ~x86-fbsd"
 IUSE=""
 
 RDEPEND="virtual/python-argparse[${PYTHON_USEDEP}]
-         dev-python/PyQt4[${PYTHON_USEDEP}]
- 		 >=sys-apps/portage-2.1
- 		 "
+		dev-python/PyQt4[${PYTHON_USEDEP}]
+		>=sys-apps/portage-2.1"
 DEPEND="${RDEPEND}
-         dev-python/setuptools[${PYTHON_USEDEP}]"
+		dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_install() {
- 	mv elogviewer.py elogviewer
+	mv elogviewer.py elogviewer
 	dobin elogviewer
 	doman elogviewer.1
 	dodoc LICENSE.TXT
@@ -46,4 +45,3 @@ pkg_postinst() {
 	elog "group."
 	elog
 }
-

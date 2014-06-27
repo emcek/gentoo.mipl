@@ -19,10 +19,8 @@ IUSE=""
 
 KEYWORDS="amd64 amd64-linux"
 
-RDEPEND="
-	dev-util/dialog
-	net-analyzer/netselect
-	"
+RDEPEND="dev-util/dialog
+		net-analyzer/netselect"
 
 python_prepare_all()  {
 	python_export_best
@@ -33,5 +31,5 @@ python_prepare_all()  {
 }
 
 src_prepare() {
-    epatch "${FILESDIR}/${PV}-fix_url_parse-483232.patch"
+	epatch "${FILESDIR}/${PV}-fix_url_parse-483232.patch"
 }
