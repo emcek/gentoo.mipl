@@ -36,7 +36,7 @@ src_install() {
 	insinto "${GAMES_DATADIR}"/${PN}
 	doins -r "${CDROM_ROOT}"/Video
 	doins App_Executables/Morrowind.ini Data_Files/*
-	doins -r Data_Files/Music 
+	doins -r Data_Files/Music
 	doins -r Data_Files/Sound
 	doins -r Data_Files/Splash
 	doins -r Data_Files/Fonts

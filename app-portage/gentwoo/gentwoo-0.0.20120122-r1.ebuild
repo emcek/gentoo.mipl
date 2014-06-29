@@ -3,11 +3,11 @@
 # $Header: $
 
 EAPI=4
-PYTHON_NEEDED="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
-
-inherit python
+#PYTHON_NEEDED="2"
+#SUPPORT_PYTHON_ABIS="1"
+#RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_COMPAT=( python2_7 )
+inherit python-r1
 
 DESCRIPTION="Client program for Social Compiling site GenTwoo"
 HOMEPAGE="http://gentwoo.elisp.net"

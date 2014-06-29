@@ -36,7 +36,7 @@ src_prepare() {
 		our \$libmap = '$(get_libdir)';
 		our \$man_ext = '$(ecompress --suffix)';
 	EOF
-
+	
 	sed -e '1,/^# == PORTAGE VARIABLES BEGIN ==/ w config.pm.start' "${S}"/config.pm >/dev/null
 	sed -e '/^# == PORTAGE VARIABLES END ==/,$ w config.pm.end' "${S}"/config.pm >/dev/null
 	cat config.pm.{start,new,end} > "${S}"/config.pm

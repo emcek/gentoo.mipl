@@ -4,12 +4,12 @@
 
 EAPI="4"
 
-PYTHON_DEPEND="2:2.7"
-RESTRICT_PYTHON_ABIS="3.*"
-
+#PYTHON_DEPEND="2:2.7"
+#RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_COMPAT=( python2_7 )
 PYTHON_USE_WITH="sqlite"
 
-inherit python games distutils
+inherit python-r1 games distutils-r1
 
 DESCRIPTION="Anno-like real time strategy game"
 HOMEPAGE="http://www.unknown-horizons.org/"

@@ -58,11 +58,11 @@ src_configure() {
 	cd build/workspaces || die
 
 	./update-workspaces.sh \
-		--with-system-nvtt \ 
+		--with-system-nvtt \
 		--with-system-enet \
-		--with-system-mozjs24 \ 
+		--with-system-mozjs24 \
 		--with-system-miniupnpc \
-		$(usex pch "" "--without-pch") \
+	$(usex pch "" "--without-pch") \
 		$(usex test "" "--without-tests") \
 		$(usex audio "" "--without-audio") \
 		$(use_enable editor atlas) \

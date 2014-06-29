@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit gnome.org git-2 eutils autotools python
+inherit gnome.org git-2 eutils autotools python-r1
 
 DESCRIPTION="A tool for making hackers do excellent presentations"
 HOMEPAGE="https://live.gnome.org/Pinpoint"
