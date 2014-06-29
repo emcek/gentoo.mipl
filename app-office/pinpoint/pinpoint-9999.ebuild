@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/app-office/pinpoint/pinpoint-0.1.4.ebuild,v 1.1 2011/12/01 17:57:06 leio Exp $
 
 EAPI=4
-
+PYTHON_COMPAT=( python2_7 )
 inherit gnome.org git-2 eutils autotools python-r1
 
 DESCRIPTION="A tool for making hackers do excellent presentations"
