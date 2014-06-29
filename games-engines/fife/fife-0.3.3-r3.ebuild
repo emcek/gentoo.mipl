@@ -4,10 +4,10 @@
 
 EAPI="4"
 
-PYTHON_DEPEND="2:2.7"
-RESTRICT_PYTHON_ABIS="3.*"
-
-inherit eutils python scons-utils
+#PYTHON_DEPEND="2:2.7"
+#RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_COMPAT=( python2_7 )
+inherit eutils python-r1 scons-utils
 
 DESCRIPTION="Flexible Isometric Free Engine, 2D"
 HOMEPAGE="http://fifengine.de"
