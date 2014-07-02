@@ -44,11 +44,11 @@ RDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.4.16_p1969-pthread.patch"
-	"${FILESDIR}/${PN}-1.4.17_p2055-cryptopp.patch"
-	"${FILESDIR}/${PN}-1.4.17_p2055-test.patch"
-	"${FILESDIR}/${PN}-1.4.17_p2055-gentoo.patch"
 	"${FILESDIR}/${PN}-1.4.17_p2055-CSocketMultiplexer.patch"
+	"${FILESDIR}/${PN}-1.4.17_p2055-test.patch"
+	"${FILESDIR}/${PN}-1.5.0-pthread.patch"
+	"${FILESDIR}/${PN}-1.5.0-cryptopp.patch"
+	"${FILESDIR}/${PN}-1.5.0-gentoo.patch"
 )
 
 S=${WORKDIR}/${P/_r*/}-Source

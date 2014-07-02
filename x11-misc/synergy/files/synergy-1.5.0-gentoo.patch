@@ -1,6 +1,6 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -77,7 +77,7 @@
+@@ -76,7 +76,7 @@
  
  	# warnings as errors:
  	# we have a problem with people checking in code with warnings.
