@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -25,7 +25,7 @@ src_prepare() {
 	fi
 
 	cat <<- EOF > "config.pm.new"
-		our \$DISTDIR = '${PORTAGE_ACTUAL_DISTDIR}';
+		our \$"DISTDIR" = '${PORTAGE_ACTUAL_DISTDIR}';
 		our \$CHOST = '${CHOST}';
 		our \$PKGDIR = '${PKGDIR}';
 		our \$PORTAGE_TMPDIR = '${PORTAGE_TMPDIR}';
