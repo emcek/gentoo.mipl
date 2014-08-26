@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -16,8 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86 ~x86-fbsd"
 IUSE=""
 
-RDEPEND="virtual/python-argparse[${PYTHON_USEDEP}]
-		dev-python/PyQt4[${PYTHON_USEDEP}]
+RDEPEND="dev-python/PyQt4[${PYTHON_USEDEP}]
 		>=sys-apps/portage-2.1"
 DEPEND="${RDEPEND}
 		dev-python/setuptools[${PYTHON_USEDEP}]"
