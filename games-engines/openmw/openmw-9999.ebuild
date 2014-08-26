@@ -44,8 +44,8 @@ LIBDEPEND="${OPENMW_LIBS}
 	dev-libs/boost:=[threads]
 	media-libs/libsdl2"
 DEPEND="${LIBDEPEND}
-	test? ( dev-cpp/gmock[tr1=]
-	    dev-cpp/gtest[tr1=] )"
+	test? ( dev-cpp/gmock
+	    dev-cpp/gtest )"
 [[ ${EAPI} == *-hdepend ]] || DEPEND+=" ${HDEPEND}"
 RDEPEND="${LIBDEPEND}"
 
