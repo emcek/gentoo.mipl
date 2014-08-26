@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,15 +8,15 @@ inherit qt4-r2
 
 DESCRIPTION="Frontend for scummvm and dosbox"
 HOMEPAGE="http://www.gr-lida.org"
-SRC_URI="https://github.com/Monthy/${PN}/tarball/v${PV} -> ${PN}-${PV}.tgz"
+SRC_URI="https://github.com/Monthy/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.tgz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="dosbox scummvm"
 
-DEPEND="x11-libs/qt-gui:4
-	x11-libs/qt-sql:4[sqlite]
+DEPEND="dev-qt/qtgui:4
+	dev-qt/qtsql:4[sqlite]
 	dosbox? ( games-emulation/dosbox )
 	scummvm? ( games-engines/scummvm )"
 RDEPEND="${DEPEND}"
