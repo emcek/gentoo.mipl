@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -19,7 +19,7 @@ SLOT="0"
 IUSE=""
 
 DEPEND="dev-python/pyyaml
-	=games-engines/fife-0.3.3-r2"
+	=games-engines/fife-0.3.3-r3"
 
 RDEPEND="$DEPEND"
 
