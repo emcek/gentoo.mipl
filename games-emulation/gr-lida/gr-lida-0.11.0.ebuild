@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -10,7 +10,7 @@ MY_P="GR-lida-${PV}"
 
 DESCRIPTION="Frontend for scummvm and dosbox"
 HOMEPAGE="http://www.gr-lida.org"
-SRC_URI="https://github.com/Monthy/${PN}/tarball/v${PV} -> ${PN}-${PV}.tgz"
+SRC_URI="https://github.com/Monthy/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.tgz"
 
 LICENSE="GPL-2"
 SLOT="0"
