@@ -4,7 +4,7 @@
 
 EAPI="1"
 
-DESCRIPTION="A GTK+ audio player which aims at being very straightforward to use."
+DESCRIPTION="A GTK+ audio player which aims at being very straightforward to use"
 HOMEPAGE="http://decibel.silent-blade.org"
 SRC_URI="http://decibel.silent-blade.org/uploads/Main/${P}.tar.gz"
 

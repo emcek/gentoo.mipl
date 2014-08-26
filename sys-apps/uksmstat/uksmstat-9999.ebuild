@@ -1,10 +1,10 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=5
 inherit git-2
-DESCRIPTION="Small tool to show UKSM statistics."
+DESCRIPTION="Small tool to show UKSM statistics"
 HOMEPAGE="http://github.com/pfactum/uksmstat"
 EGIT_REPO_URI="https://github.com/pfactum/uksmstat.git"
 
