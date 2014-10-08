@@ -4,9 +4,9 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python2_7 )
+#PYTHON_COMPAT=( python2_7 )
 
-inherit git-2 flag-o-matic python-r1
+inherit git-2 flag-o-matic python #-r1
 
 DESCRIPTION="Cross-platform desktop application shell"
 HOMEPAGE="https://github.com/atom/atom-shell"
@@ -67,14 +67,11 @@ pkg_setup() {
 }
 
 src_prepare() {
-	default
-
 	einfo "Bootstrap atom-shell source"
 
 	# Fix util.execute function to be more verbose
 	sed -i -e 's/def execute(argv):/def execute(argv):\n  print "   - bootstrap: " + " ".join(argv)/g' \
-		./script/lib/util.py \
-		|| die "Failed to sed lib/util.py"
+		./script/lib/util.py || die "Failed to sed lib/util.py"
 
 	# Bootstrap
 	./script/bootstrap.py || die "bootstrap failed"
@@ -82,17 +79,15 @@ src_prepare() {
 	# Fix libudev.so.0 link
 	sed -i -e 's/libudev.so.0/libudev.so.1/g' \
 		./vendor/brightray/vendor/download/libchromiumcontent/Release/libchromiumcontent.so \
-	|| die "libudev fix failed"
+			|| die "libudev fix failed"
 
 	# Make every subprocess calls fatal
 	sed -i -e 's/subprocess.call(/subprocess.check_call(/g' \
-		./script/build.py \
-		|| die "build fix failed"
+		./script/build.py || die "build fix failed"
 
 	# Fix missing libs in linking process (the ugly way)
 	sed -i -e 's/-lglib-2.0/-lglib-2.0 -lgconf-2 -lX11 -lXrandr -lXext/g' \
-		./out/$(usex debug Debug Release)/obj/atom.ninja \
-	|| die "linkage fix failed"
+		./out/$(usex debug Debug Release)/obj/atom.ninja || die "linkage fix failed"
 }
 
 src_compile() {
