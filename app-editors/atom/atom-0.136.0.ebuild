@@ -4,6 +4,8 @@
 
 EAPI=5
 
+#PYTHON_COMPAT=( python2_7 )
+
 inherit git-2 flag-o-matic python eutils
 
 DESCRIPTION="A hackable text editor for the 21st Century"
@@ -49,8 +51,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	default
-
 	# Skip atom-shell download
 	sed -i -e "s/defaultTasks = \['download-atom-shell', /defaultTasks = [/g" \
 		./build/Gruntfile.coffee || die "Failed to fix Gruntfile"
