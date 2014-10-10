@@ -11,7 +11,7 @@ HOMEPAGE="http://machinarium.net/"
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="-* ~amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 RESTRICT="fetch mirror"
 IUSE="multilib"
 
@@ -56,10 +56,10 @@ RDEPEND="
 	x11-libs/pango
 	x11-libs/pixman
 	amd64? (
-		app-emulation/emul-linux-x86-baselibs
-		app-emulation/emul-linux-x86-gtklibs
-		app-emulation/emul-linux-x86-opengl
-		app-emulation/emul-linux-x86-xlibs
+		>=app-emulation/emul-linux-x86-baselibs-20130224-r14
+		>=app-emulation/emul-linux-x86-gtklibs-20140508-r3
+		>=app-emulation/emul-linux-x86-opengl-20140508
+		>=app-emulation/emul-linux-x86-xlibs-20140508
 	)
 "
 DEPEND="${RDEPEND}"
@@ -89,4 +89,3 @@ src_install() {
 
 	prepgamesdirs
 }
-
