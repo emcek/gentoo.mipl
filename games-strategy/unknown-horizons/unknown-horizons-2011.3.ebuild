@@ -35,3 +35,4 @@ src_install() {
 	distutils_src_install
 	prepgamesdirs
 }
+

@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -68,3 +68,4 @@ src_install() {
 	escons install-python --python-prefix="${D}/$(python_get_sitedir)" \
 			--prefix="${D}/usr" || die "install failed"
 }
+
