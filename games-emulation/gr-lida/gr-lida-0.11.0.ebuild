@@ -32,3 +32,4 @@ pkg_postinst(){
 	elog "The GUI is by default in Spanish."
 	elog "If you need it, English is available on the Options Menu."
 }
+
