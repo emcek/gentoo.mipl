@@ -2,13 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer>
- <email>mva@mva.name</email>
- <description>
-	If you have any issues, please contact me, or try to find me in IRC on Freenode, OFTC or RusNet.
- </description> 
- <name>Vadim A. Misbakh-Soloviov</name>
+	<email>mplichta@gmail.com</email>
+	<name>Michal Plichta</name>
+	<description>If you have any issues, please contact me, or try to find me in IRC on Freenode, OFTC or RusNet.</description> 
 </maintainer>
 <longdescription>FIXME</longdescription> 
-<use>
-</use>
+<use></use>
 </pkgmetadata>

@@ -67,6 +67,7 @@ DEPEND="${RDEPEND}"
 S="${WORKDIR}/${MY_PN}"
 
 REQUIRED_USE="amd64? ( multilib )"
+
 pkg_nofetch() {
 	ewarn
 	ewarn "Place ${A} to ${DISTDIR}"
@@ -88,3 +89,4 @@ src_install() {
 
 	prepgamesdirs
 }
+
