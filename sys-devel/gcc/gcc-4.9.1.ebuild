@@ -1,4 +1,4 @@
-# Copyright 2009-2014 Andrey Ovcharov <sudormrfhalt@gmail.com>
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -26,7 +26,7 @@ DESCRIPTION="The GNU Compiler Collection"
 
 LICENSE="GPL-3+ LGPL-3+ || ( GPL-3+ libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.3+"
 
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
