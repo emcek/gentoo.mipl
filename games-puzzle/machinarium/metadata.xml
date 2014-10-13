@@ -4,8 +4,10 @@
 <maintainer>
 	<email>mplichta@gmail.com</email>
 	<name>Michal Plichta</name>
-	<description>If you have any issues, please contact me, or try to find me in IRC on Freenode, OFTC or RusNet.</description> 
 </maintainer>
-<longdescription>FIXME</longdescription> 
-<use></use>
+<longdescription>
+	<pkg>machinarium</pkg>
+	<cat>games-puzzle</cat>
+	Point-and-click adventure about robot in steam-punk world
+</longdescription>
 </pkgmetadata>

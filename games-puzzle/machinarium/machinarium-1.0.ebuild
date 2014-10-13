@@ -10,7 +10,7 @@ DESCRIPTION="Point-and-click adventure about robot in steam-punk world"
 HOMEPAGE="http://machinarium.net/"
 
 SLOT="0"
-LICENSE="GPL-2"
+LICENSE="AdobeFlash-11.x"
 KEYWORDS="~amd64 ~x86"
 RESTRICT="fetch mirror"
 IUSE="multilib"
