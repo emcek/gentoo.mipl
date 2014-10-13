@@ -103,7 +103,7 @@ src_compile() {
 }
 
 src_install() {
-	prepall
+	prepstrip
 
 	into    /usr/share/atom
 	insinto /usr/share/atom
@@ -120,5 +120,5 @@ src_install() {
 	doins icudtl.dat
 	doins content_shell.pak
 
-	dodoc LICENSE
+	# dodoc LICENSE
 }
