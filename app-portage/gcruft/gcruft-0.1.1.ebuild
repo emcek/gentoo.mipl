@@ -34,7 +34,7 @@ src_prepare() {
 		our \$installedbase = '$(portageq vdb_path)';
 		our \$multilib = '$multilib';
 		our \$libmap = '$(get_libdir)';
-		our \$man_ext = '$(ecompress --suffix)';
+		our \$man_ext = '.bz2';
 	EOF
 
 	sed -e '1,/^# == PORTAGE VARIABLES BEGIN ==/ w config.pm.start' "${S}"/config.pm >/dev/null
