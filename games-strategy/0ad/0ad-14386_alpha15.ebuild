@@ -16,7 +16,7 @@ SRC_URI="http://releases.wildfiregames.com/${MY_P}-unix-build.tar.xz"
 LICENSE="GPL-2 LGPL-2.1 MIT CC-BY-SA-3.0"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~x86"
-IUSE="+audio editor fam pch test"
+IUSE="+sound editor fam pch test"
 
 RDEPEND="
 	~dev-lang/spidermonkey-1.8.5
@@ -35,7 +35,7 @@ RDEPEND="
 	virtual/opengl
 	x11-libs/libX11
 	x11-libs/libXcursor
-	audio? ( media-libs/libogg
+	sound? ( media-libs/libogg
 		media-libs/libvorbis
 		media-libs/openal )
 	editor? ( x11-libs/wxGTK:${WX_GTK_VER}[X,opengl] )"
@@ -57,7 +57,7 @@ src_configure() {
 		--minimal-flags
 		$(usex pch "" "--without-pch")
 		$(usex test "" "--without-tests")
-		$(usex audio "" "--without-audio")
+		$(usex sound "" "--without-audio")
 		$(usex editor "--atlas" "")
 		--collada
 		--bindir="${GAMES_BINDIR}"

@@ -18,7 +18,7 @@ ESVN_REPO_URI="http://svn.wildfiregames.com/public/ps/trunk"
 LICENSE="GPL-2 LGPL-2.1 MIT CC-BY-SA-3.0"
 SLOT="0"
 KEYWORDS=""
-IUSE="+audio editor fam pch test"
+IUSE="+sound editor fam pch test"
 
 RDEPEND="
 	dev-lang/spidermonkey:24
@@ -37,7 +37,7 @@ RDEPEND="
 	virtual/opengl
 	x11-libs/libX11
 	x11-libs/libXcursor
-	audio? ( media-libs/libogg
+	sound? ( media-libs/libogg
 		media-libs/libvorbis
 		media-libs/openal )
 	editor? ( x11-libs/wxGTK:${WX_GTK_VER}[X,opengl] )"
@@ -64,7 +64,7 @@ src_configure() {
 		--with-system-miniupnpc \
 	$(usex pch "" "--without-pch") \
 		$(usex test "" "--without-tests") \
-		$(usex audio "" "--without-audio") \
+		$(usex sound "" "--without-audio") \
 		$(use_enable editor atlas) \
 		--bindir="${GAMES_BINDIR}" \
 		--libdir="$(games_get_libdir)"/${PN} \
