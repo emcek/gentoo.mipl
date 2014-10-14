@@ -70,7 +70,7 @@ src_compile() {
 }
 
 src_install() {
-	prepall
+	prepstrip
 
 	into    /usr
 
