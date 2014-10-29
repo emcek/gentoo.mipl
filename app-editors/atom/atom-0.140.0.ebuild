@@ -4,9 +4,8 @@
 
 EAPI=5
 
-#PYTHON_COMPAT=( python2_7 )
-
-inherit git-2 flag-o-matic python eutils
+PYTHON_COMPAT=( python2_7 )
+inherit git-2 flag-o-matic python-any-r1 eutils
 
 DESCRIPTION="A hackable text editor for the 21st Century"
 HOMEPAGE="https://atom.io"
@@ -27,23 +26,18 @@ fi
 IUSE=""
 
 DEPEND="
-	>=dev-util/atom-shell-0.15.9
+	${PYTHON_DEPS}
+	>=dev-util/atom-shell-0.18
 	>=net-libs/nodejs-0.10.29[npm]
 "
 RDEPEND="${DEPEND}"
 
 QA_PRESTRIPPED="/usr/share/atom/node_modules/symbols-view/vendor/ctags-linux"
 
-PYTHON_DEPEND="2"
-RESTRICT_PYTHON_ABIS="3.*"
-
 pkg_setup() {
-	python_set_active_version 2
-	python_pkg_setup
+	python-any-r1_pkg_setup
 
-	# Update npm config to use python 2
-	export PYTHON=$(PYTHON -a)
-	npm config set python $(PYTHON -a)
+	npm config set python $PYTHON
 }
 
 src_unpack() {
@@ -56,7 +50,7 @@ src_prepare() {
 		./build/Gruntfile.coffee || die "Failed to fix Gruntfile"
 
 	# Skip atom-shell copy
-	epatch "${FILESDIR}"/0002-skip-atom-shell-copy.patch
+	epatch "${FILESDIR}/0002-skip-atom-shell-copy.patch"
 
 	# Fix atom location guessing
 	sed -i -e 's/ATOM_PATH="$USR_DIRECTORY\/share\/atom/ATOM_PATH="$USR_DIRECTORY\/../g' \
@@ -66,20 +60,18 @@ src_prepare() {
 src_compile() {
 	./script/build --verbose --build-dir "${T}" || die "Failed to compile"
 
-	"${T}"/Atom/resources/app/apm/node_modules/atom-package-manager/bin/apm rebuild || die "Failed to rebuild native module"
+	"${T}/Atom/resources/app/apm/node_modules/atom-package-manager/bin/apm" rebuild || die "Failed to rebuild native module"
 }
 
 src_install() {
-	prepstrip
-
-	into    /usr
+	into /usr
 
 	insinto /usr/share/applications
 
 	insinto /usr/share/${PN}/resources/app
 	exeinto /usr/bin
 
-	cd "${T}"/Atom/resources/app
+	cd "${T}/Atom/resources/app"
 	doicon resources/atom.png
 	dodoc LICENSE.md
 
@@ -95,5 +87,5 @@ src_install() {
 	dosym ../share/${PN}/resources/app/atom.sh /usr/bin/atom
 	dosym ../share/${PN}/resources/app/apm/node_modules/atom-package-manager/bin/apm /usr/bin/apm
 
-	make_desktop_entry "/usr/bin/atom %U" "Atom" "atom" "GNOME;GTK;Utility;TextEditor;Development;" "MimeType=text/plain;\nStartupNotify=true\nStartupWMClass=Atom Shell"
+	make_desktop_entry "/usr/bin/atom %U" "Atom" "atom" "GNOME;GTK;Utility;TextEditor;Development;" "MimeType=text/plain;\nStartupNotify=true\nStartupWMClass=Atom"
 }
