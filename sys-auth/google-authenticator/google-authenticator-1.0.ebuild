@@ -1,4 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -22,7 +22,10 @@ RDEPEND="${DEPEND}
 
 RESTRICT="test"
 # Test fails with:
-# pam_google_authenticator_unittest: pam_google_authenticator_unittest.c:317: main: Assertion `pam_sm_open_session(((void *)0), 0, targc, targv) == 0' failed.
+# pam_google_authenticator_unittest:
+#	pam_google_authenticator_unittest.c:317: 
+#	main: Assertion `pam_sm_open_session(((void *)0), 0, targc, targv) == 0' failed.
+#
 # No user name available when checking verification code
 
 S=${WORKDIR}/libpam-${P}
@@ -31,10 +34,6 @@ src_prepare(){
 	epatch "${FILESDIR}"/${P}-Makefile.patch
 	tc-export CC
 }
-
-#src_compile() {
-#	emake CC="$(tc-getCC)"
-#}
 
 src_install(){
 	dopammod pam_google_authenticator.so
