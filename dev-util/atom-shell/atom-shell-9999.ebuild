@@ -5,8 +5,7 @@
 EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
-
-inherit git-2 flag-o-matic python-r1
+inherit git-2 flag-o-matic python-any-r1
 
 DESCRIPTION="Cross-platform desktop application shell"
 HOMEPAGE="https://github.com/atom/atom-shell"
@@ -27,6 +26,7 @@ fi
 IUSE="debug"
 
 DEPEND="
+	${PYTHON_DEPS}
 	sys-devel/llvm:0/3.4[clang]
 	dev-lang/python:2.7
 	>=net-libs/nodejs-0.10.29[npm]
@@ -49,32 +49,24 @@ QA_PRESTRIPPED="
 	/usr/share/atom/libffmpegsumo.so
 	/usr/share/atom/libchromiumcontent.so
 "
-
-PYTHON_DEPEND="2"
-RESTRICT_PYTHON_ABIS="3.*"
-
 src_unpack() {
 	git-2_src_unpack
 }
 
 pkg_setup() {
-	python_set_active_version 2
-	python_pkg_setup
+	python-any-r1_pkg_setup
 
 	# Update npm config to use python 2
-	export PYTHON=$(PYTHON -a)
-	npm config set python $(PYTHON -a)
+	npm config set python $PYTHON
 }
 
 src_prepare() {
-	default
-
 	einfo "Bootstrap atom-shell source"
 
 	# Fix util.execute function to be more verbose
 	sed -i -e 's/def execute(argv):/def execute(argv):\n  print "   - bootstrap: " + " ".join(argv)/g' \
-		./script/lib/util.py \
-		|| die "Failed to sed lib/util.py"
+	  ./script/lib/util.py \
+	  || die "Failed to sed lib/util.py"
 
 	# Bootstrap
 	./script/bootstrap.py || die "bootstrap failed"
@@ -82,7 +74,7 @@ src_prepare() {
 	# Fix libudev.so.0 link
 	sed -i -e 's/libudev.so.0/libudev.so.1/g' \
 		./vendor/brightray/vendor/download/libchromiumcontent/Release/libchromiumcontent.so \
-	|| die "libudev fix failed"
+		|| die "libudev fix failed"
 
 	# Make every subprocess calls fatal
 	sed -i -e 's/subprocess.call(/subprocess.check_call(/g' \
@@ -92,7 +84,7 @@ src_prepare() {
 	# Fix missing libs in linking process (the ugly way)
 	sed -i -e 's/-lglib-2.0/-lglib-2.0 -lgconf-2 -lX11 -lXrandr -lXext/g' \
 		./out/$(usex debug Debug Release)/obj/atom.ninja \
-	|| die "linkage fix failed"
+		|| die "linkage fix failed"
 }
 
 src_compile() {
@@ -103,9 +95,8 @@ src_compile() {
 }
 
 src_install() {
-	prepstrip
 
-	into    /usr/share/atom
+	into	/usr/share/atom
 	insinto /usr/share/atom
 	exeinto /usr/share/atom
 
@@ -120,5 +111,4 @@ src_install() {
 	doins icudtl.dat
 	doins content_shell.pak
 
-	# dodoc LICENSE
 }
