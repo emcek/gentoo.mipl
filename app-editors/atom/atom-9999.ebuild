@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
 inherit git-2 flag-o-matic python-any-r1 eutils
@@ -33,9 +33,8 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-QA_PRESTRIPPED="
-	/usr/share/atom/node_modules/symbols-view/vendor/ctags-linux
-"
+QA_PRESTRIPPED="/usr/share/atom/node_modules/symbols-view/vendor/ctags-linux"
+
 pkg_setup() {
 	python-any-r1_pkg_setup
 
@@ -49,16 +48,14 @@ src_unpack() {
 src_prepare() {
 	# Skip atom-shell download
 	sed -i -e "s/defaultTasks = \['download-atom-shell', /defaultTasks = [/g" \
-	  ./build/Gruntfile.coffee \
-	  || die "Failed to fix Gruntfile"
+		./build/Gruntfile.coffee || die "Failed to fix Gruntfile"
 
 	# Skip atom-shell copy
 	epatch "${FILESDIR}/0002-skip-atom-shell-copy.patch"
 
 	# Fix atom location guessing
 	sed -i -e 's/ATOM_PATH="$USR_DIRECTORY\/share\/atom/ATOM_PATH="$USR_DIRECTORY\/../g' \
-	  ./atom.sh \
-	  || die "Fail fixing atom-shell directory"
+		./atom.sh || die "Fail fixing atom-shell directory"
 }
 
 src_compile() {
@@ -68,8 +65,7 @@ src_compile() {
 }
 
 src_install() {
-
-	into	/usr
+	into /usr
 
 	insinto /usr/share/applications
 
