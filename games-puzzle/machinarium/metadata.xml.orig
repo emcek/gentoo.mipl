@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>mplichta@gmail.com</email>
+	<name>Michal Plichta</name>
+</maintainer>
+<longdescription>
+	<pkg>machinarium</pkg>
+	<cat>games-puzzle</cat>
+	Point-and-click adventure about robot in steam-punk world
+</longdescription>
+</pkgmetadata>
