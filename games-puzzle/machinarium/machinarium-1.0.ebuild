@@ -62,6 +62,7 @@ RDEPEND="
 		>=app-emulation/emul-linux-x86-xlibs-20140508
 	)
 "
+
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/${MY_PN}"
