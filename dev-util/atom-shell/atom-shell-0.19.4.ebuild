@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
 inherit git-2 flag-o-matic python-any-r1
@@ -42,6 +42,7 @@ DEPEND="
 	x11-libs/libXtst
 	x11-libs/pango
 "
+
 RDEPEND="${DEPEND}
 	!<app-editors/atom-0.120.0
 "
@@ -50,6 +51,7 @@ QA_PRESTRIPPED="
 	/usr/share/atom/libffmpegsumo.so
 	/usr/share/atom/libchromiumcontent.so
 "
+
 src_unpack() {
 	git-2_src_unpack
 }
@@ -66,8 +68,8 @@ src_prepare() {
 
 	# Fix util.execute function to be more verbose
 	sed -i -e 's/def execute(argv):/def execute(argv):\n  print "   - bootstrap: " + " ".join(argv)/g' \
-	  ./script/lib/util.py \
-	  || die "Failed to sed lib/util.py"
+		./script/lib/util.py \
+		|| die "Failed to sed lib/util.py"
 
 	# Bootstrap
 	./script/bootstrap.py || die "bootstrap failed"
@@ -97,8 +99,7 @@ src_compile() {
 }
 
 src_install() {
-
-	into	/usr/share/atom
+	into /usr/share/atom
 	insinto /usr/share/atom
 	exeinto /usr/share/atom
 
@@ -112,5 +113,4 @@ src_install() {
 	doins LICENSE
 	doins icudtl.dat
 	doins content_shell.pak
-
 }
