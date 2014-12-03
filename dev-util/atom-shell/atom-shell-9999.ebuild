@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
 inherit git-2 flag-o-matic python-any-r1
@@ -29,7 +29,7 @@ DEPEND="
 	${PYTHON_DEPS}
 	sys-devel/llvm:0/3.4[clang]
 	dev-lang/python:2.7
-	>=net-libs/nodejs-0.10.29[npm]
+	>=net-libs/nodejs-0.10.30[npm]
 	x11-libs/gtk+:2
 	x11-libs/libnotify
 	gnome-base/libgnome-keyring
@@ -40,7 +40,9 @@ DEPEND="
 	net-print/cups
 	sys-libs/libcap
 	x11-libs/libXtst
+	x11-libs/pango
 "
+
 RDEPEND="${DEPEND}
 	!<app-editors/atom-0.120.0
 "
@@ -66,10 +68,12 @@ src_prepare() {
 
 	# Fix util.execute function to be more verbose
 	sed -i -e 's/def execute(argv):/def execute(argv):\n  print "   - bootstrap: " + " ".join(argv)/g' \
-		./script/lib/util.py || die "Failed to sed lib/util.py"
+		./script/lib/util.py \
+		|| die "Failed to sed lib/util.py"
 
 	# Bootstrap
-	./script/bootstrap.py || die "bootstrap failed"
+	./script/bootstrap.py \
+		|| die "bootstrap failed"
 
 	# Fix libudev.so.0 link
 	sed -i -e 's/libudev.so.0/libudev.so.1/g' \
@@ -78,18 +82,18 @@ src_prepare() {
 
 	# Make every subprocess calls fatal
 	sed -i -e 's/subprocess.call(/subprocess.check_call(/g' \
-		./script/build.py || die "build fix failed"
+		./script/build.py \
+		|| die "build fix failed"
 
-	# Fix missing libs in linking process (the ugly way)
-	sed -i -e 's/-lglib-2.0/-lglib-2.0 -lgconf-2 -lX11 -lXrandr -lXext/g' \
-		./out/$(usex debug Debug Release)/obj/atom.ninja || die "linkage fix failed"
+	# Update ninja files
+	./script/update.py || die "update failed"
 }
 
 src_compile() {
 	OUT=out/$(usex debug Debug Release)
 	./script/build.py --configuration $(usex debug Debug Release) || die "Compilation failed"
-	echo "v$PV" > ${OUT}/version
-	cp LICENSE $OUT
+	echo "v$PV" > "${OUT}/version"
+	cp LICENSE "$OUT"
 }
 
 src_install() {
@@ -97,7 +101,7 @@ src_install() {
 	insinto /usr/share/atom
 	exeinto /usr/share/atom
 
-	cd ${OUT}
+	cd "${OUT}"
 
 	doexe atom libchromiumcontent.so libffmpegsumo.so
 
