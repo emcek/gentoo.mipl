@@ -6,11 +6,11 @@
 		<name>Julian Ospald</name>
 	</maintainer>
 	<use>
-		<flag name="devtools">Build development tools</flag>
-		<flag name="ffmpeg">Use ffmpeg for sound</flag>
+<!--		<flag name="devtools">Build development tools</flag>
+<flag name="ffmpeg">Use ffmpeg for sound</flag> -->
 		<flag name="launcher">Build game launcher</flag>
 		<flag name="opencs">Build OpenCS (ConstructionSet</flag>
-		<flag name="mpg123">Use mpg123 + libsndfile for sound</flag>
+<!--		<flag name="mpg123">Use mpg123 + libsndfile for sound</flag>-->
 		<flag name="tr1">Something for testing</flag>
 	</use>
 </pkgmetadata>
