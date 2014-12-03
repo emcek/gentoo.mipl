@@ -72,7 +72,8 @@ src_prepare() {
 		|| die "Failed to sed lib/util.py"
 
 	# Bootstrap
-	./script/bootstrap.py || die "bootstrap failed"
+	./script/bootstrap.py \
+		|| die "bootstrap failed"
 
 	# Fix libudev.so.0 link
 	sed -i -e 's/libudev.so.0/libudev.so.1/g' \
