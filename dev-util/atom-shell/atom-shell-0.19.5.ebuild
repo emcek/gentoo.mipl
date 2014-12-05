@@ -85,8 +85,8 @@ src_prepare() {
 		./script/build.py \
 		|| die "build fix failed"
 
-	epatch "${FILESDIR}/0001-fix-atom-shell-linking.patch"
-	epatch "${FILESDIR}/0002-fix-brightray-linking.patch"
+	#epatch "${FILESDIR}/0001-fix-atom-shell-linking.patch"
+	#epatch "${FILESDIR}/0002-fix-brightray-linking.patch"
 
 	# Update ninja files
 	./script/update.py || die "update failed"
