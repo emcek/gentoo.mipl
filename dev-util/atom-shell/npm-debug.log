@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/bin/node',
+1 verbose cli   '/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   '--globalconfig',
+1 verbose cli   '/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/.apmrc',
+1 verbose cli   '--userconfig',
+1 verbose cli   '/home/emc/.atom/.apmrc',
+1 verbose cli   'install',
+1 verbose cli   '--target=0.18.0',
+1 verbose cli   '--arch=x64' ]
+2 info using npm@1.4.4
+3 info using node@v0.10.33
+4 error install Couldn't read dependencies
+5 error package.json ENOENT, open '/home/emc/git/gentoo.mipl/dev-util/atom-shell/package.json'
+5 error package.json This is most likely not a problem with npm itself.
+5 error package.json npm can't find a package.json file in your current directory.
+6 error System Linux 3.16.0-pf1
+7 error command "/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/bin/node" "/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/node_modules/npm/bin/npm-cli.js" "--globalconfig" "/usr/share/atom/resources/app/apm/node_modules/atom-package-manager/.apmrc" "--userconfig" "/home/emc/.atom/.apmrc" "install" "--target=0.18.0" "--arch=x64"
+8 error cwd /home/emc/git/gentoo.mipl/dev-util/atom-shell
+9 error node -v v0.10.33
+10 error npm -v 1.4.4
+11 error path /home/emc/git/gentoo.mipl/dev-util/atom-shell/package.json
+12 error code ENOPACKAGEJSON
+13 error errno 34
+14 verbose exit [ 34, true ]
