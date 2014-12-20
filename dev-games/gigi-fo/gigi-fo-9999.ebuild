@@ -35,7 +35,7 @@ RDEPEND="
 "
 
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	sys-devel/libtool:2
 	doc? ( app-doc/doxygen )
 "
