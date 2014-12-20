@@ -11,7 +11,8 @@ HOMEPAGE="http://www.freeorion.org"
 ESVN_REPO_URI="https://${PN}.svn.sourceforge.net/svnroot/${PN}/trunk/FreeOrion"
 ESVN_PROJECT="${PN}"
 
-LICENSE="GPL-2 CCPL-Attribution-ShareAlike-3.0"
+#LICENSE="GPL-2 CCPL-Attribution-ShareAlike-3.0"
+LICENSE="GPL-2 LGPL-2.1 CC-BY-SA-3.0"
 KEYWORDS="~amd64 ~x86"
 IUSE="cg debug threads"
 
@@ -35,7 +36,7 @@ RDEPEND="
 
 DEPEND="${RDEPEND}
 	sys-devel/libtool
-	dev-util/pkgconfig"
+	virtual/pkgconfig"
 
 CMAKE_USE_DIR="${S}"
 
