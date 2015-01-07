@@ -5,7 +5,7 @@
 EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
-inherit git-2 flag-o-matic python-any-r1
+inherit git-r3 flag-o-matic python-any-r1
 
 DESCRIPTION="Cross-platform desktop application shell"
 HOMEPAGE="https://github.com/atom/atom-shell"
@@ -53,7 +53,7 @@ QA_PRESTRIPPED="
 "
 
 src_unpack() {
-	git-2_src_unpack
+	git-r3_src_unpack
 }
 
 pkg_setup() {
