@@ -5,7 +5,7 @@
 EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
-inherit git-2 flag-o-matic python-any-r1 eutils
+inherit git-r3 flag-o-matic python-any-r1 eutils
 
 DESCRIPTION="A hackable text editor for the 21st Century"
 HOMEPAGE="https://atom.io"
@@ -27,14 +27,14 @@ IUSE=""
 
 DEPEND="
 	${PYTHON_DEPS}
-	>=dev-util/atom-shell-0.19.4
+	dev-util/atom-shell:0/20
 	>=net-libs/nodejs-0.10.30[npm]
-	|| ( media-fonts/inconsolata media-fonts/inconsolata-dz )
+	media-fonts/inconsolata
 "
 
 RDEPEND="${DEPEND}"
 
-QA_PRESTRIPPED="/usr/share/atom/node_modules/symbols-view/vendor/ctags-linux"
+QA_PRESTRIPPED="/usr/share/atom/resources/app/node_modules/symbols-view/vendor/ctags-linux"
 
 pkg_setup() {
 	python-any-r1_pkg_setup
@@ -43,7 +43,7 @@ pkg_setup() {
 }
 
 src_unpack() {
-	git-2_src_unpack
+	git-r3_src_unpack
 }
 
 src_prepare() {
@@ -64,6 +64,8 @@ src_prepare() {
 src_compile() {
 	./script/build --verbose --build-dir "${T}" || die "Failed to compile"
 	"${T}/Atom/resources/app/apm/node_modules/atom-package-manager/bin/apm" rebuild || die "Failed to rebuild native module"
+	# Setup python path to builtin npm
+	echo "python = $PYTHON" >> "${T}/Atom/resources/app/apm/node_modules/atom-package-manager/.apmrc"
 }
 
 src_install() {
@@ -85,6 +87,7 @@ src_install() {
 	fperms +x /usr/share/${PN}/resources/app/atom.sh
 	fperms +x /usr/share/${PN}/resources/app/apm/node_modules/.bin/apm
 	fperms +x /usr/share/${PN}/resources/app/apm/node_modules/atom-package-manager/bin/node
+	fperms +x /usr/share/${PN}/resources/app/apm/node_modules/atom-package-manager/node_modules/npm/bin/node-gyp-bin/node-gyp
 
 	# Symlinking to /usr/bin
 	dosym ../share/${PN}/resources/app/atom.sh /usr/bin/atom
