@@ -5,7 +5,7 @@
 EAPI="5"
 
 PYTHON_COMPAT=( python2_7 )
-inherit git-2 flag-o-matic python-any-r1
+inherit git-r3 flag-o-matic python-any-r1
 
 DESCRIPTION="Cross-platform desktop application shell"
 HOMEPAGE="https://github.com/atom/atom-shell"
@@ -14,7 +14,7 @@ SRC_URI=""
 EGIT_REPO_URI="git://github.com/atom/atom-shell"
 
 LICENSE="MIT"
-SLOT="0"
+SLOT="0/20"
 
 if [[ ${PV} == *9999 ]];then
 	KEYWORDS=""
@@ -53,7 +53,7 @@ QA_PRESTRIPPED="
 "
 
 src_unpack() {
-	git-2_src_unpack
+	git-r3_src_unpack
 }
 
 pkg_setup() {
@@ -84,9 +84,6 @@ src_prepare() {
 	sed -i -e 's/subprocess.call(/subprocess.check_call(/g' \
 		./script/build.py \
 		|| die "build fix failed"
-
-	#epatch "${FILESDIR}/0001-fix-atom-shell-linking.patch"
-	#epatch "${FILESDIR}/0002-fix-brightray-linking.patch"
 
 	# Update ninja files
 	./script/update.py || die "update failed"
