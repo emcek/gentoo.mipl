@@ -8,7 +8,7 @@ inherit cmake-utils subversion
 
 DESCRIPTION="FreeOrion fork of the GiGi OpenGL interface library"
 HOMEPAGE="http://www.freeorion.org"
-ESVN_REPO_URI="https://freeorion.svn.sourceforge.net/svnroot/freeorion/trunkFreeOrion/GG"
+ESVN_REPO_URI="https://freeorion.svn.sourceforge.net/svnroot/freeorion/trunk/FreeOrion/GG"
 ESVN_PROJECT="GG"
 
 LICENSE="LGPL-2.1"
