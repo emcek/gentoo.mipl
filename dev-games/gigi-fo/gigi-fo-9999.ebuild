@@ -8,8 +8,8 @@ inherit cmake-utils subversion
 
 DESCRIPTION="FreeOrion fork of the GiGi OpenGL interface library"
 HOMEPAGE="http://www.freeorion.org"
-ESVN_REPO_URI="https://freeorion.svn.sourceforge.net/svnroot/freeorion/trunk/FreeOrion/GG"
-ESVN_PROJECT="GG"
+ESVN_REPO_URI="https://freeorion.svn.sourceforge.net/svnroot/freeorion/trunk"
+ESVN_PROJECT="FreeOrion/GG/GG"
 
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
@@ -34,7 +34,8 @@ RDEPEND="
 	sdl? ( >=media-libs/libsdl-1.2 )
 "
 
-DEPEND="${RDEPEND}
+DEPEND="
+	${RDEPEND}
 	virtual/pkgconfig
 	sys-devel/libtool:2
 	doc? ( app-doc/doxygen )
