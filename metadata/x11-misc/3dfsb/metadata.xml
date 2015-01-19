@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>voyageur@gentoo.org</email>
+		<name>Bernard Cafarelli</name>
+	</maintainer>
+	<maintainer>
+		<email>mplichta@gmail.com</email>
+		<name>Michal Plichta</name>
+	</maintainer>
+	<longdescription>3D File System Browser - cleaned up and improved fork of the old <pkg>app-misc/tdfsb</pkg></longdescription>
+</pkgmetadata>
