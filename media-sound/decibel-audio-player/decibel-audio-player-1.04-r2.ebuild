@@ -1,8 +1,8 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="1"
+EAPI=2
 
 DESCRIPTION="A GTK+ audio player which aims at being very straightforward to use"
 HOMEPAGE="http://decibel.silent-blade.org"
