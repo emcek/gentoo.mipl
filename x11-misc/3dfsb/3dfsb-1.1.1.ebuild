@@ -3,11 +3,11 @@
 # $Header: $
 
 EAPI=5
-inherit eutils toolchain-funcs
+inherit cmake-utils
 
 DESCRIPTION="3-Dimensional File System Browser"
 HOMEPAGE="https://github.com/tomvanbraeckel/3dfsb"
-SRC_URI="https://github.com/tomvanbraeckel/${PN}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/tomvanbraeckel/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -21,21 +21,17 @@ RDEPEND="media-libs/gstreamer:1.0
 	media-libs/freeglut
 	sys-apps/file"
 DEPEND="${RDEPEND}
+	media-gfx/imagemagick
 	virtual/pkgconfig"
 
-doecho() {
-	echo "$@"
-	"$@" || die
-}
+PATCHES=( "${FILESDIR}"/${P}-complete_cmake.patch )
 
 src_compile() {
-	PACKAGES="glu gstreamer-1.0 SDL_image"
-	doecho $(tc-getCC) ${CFLAGS} $(pkg-config --cflags ${PACKAGES}) \
-		${LDFLAGS} ${PN}.c $(pkg-config --libs ${PACKAGES}) \
-		-lglut -lmagic -lm -o ${PN}
+	mogrify -format xpm images/*.png || die
+	cmake-utils_src_compile
 }
 
 src_install() {
-	dobin 3dfsb
+	dobin "${BUILD_DIR}"/3dfsb
 	dodoc CHANGELOG README.md
 }
