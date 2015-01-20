@@ -20,8 +20,6 @@ RESTRICT="bindist mirror"
 RDEPEND="games-engines/openmw"
 DEPEND="app-arch/unshield"
 
-QA_PREBUILT="${GAMES_DATADIR#/}/${PN}/*"
-
 S=${WORKDIR}
 
 CHECKREQS_DISK_BUILD="622M"
@@ -53,23 +51,32 @@ src_unpack() {
 src_install() {
 	if use main ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}"/Video
+		doins -r "${CDROM_ROOT}1"/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Music Sound Splash Fonts
+		doins -r Data_Files/Music 
+		doins -r Data_Files/Sound
+		doins -r Data_Files/Splash
+		doins -r Data_Files/Fonts
 	fi
 
 	if use bloodmoon ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}"/Video
+		doins -r "${CDROM_ROOT}2"/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Music Sound Splash Fonts
+		doins -r Data_Files/Music 
+		doins -r Data_Files/Sound
+		doins -r Data_Files/Splash
+		doins -r Data_Files/Fonts
 	fi
 
 	if use tribunal ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}"/Video
+		doins -r "${CDROM_ROOT}3"/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Music Sound Splash Fonts
+		doins -r Data_Files/Music 
+		doins -r Data_Files/Sound
+		doins -r Data_Files/Splash
+		doins -r Data_Files/Fonts
 	fi
 
 	prepgamesdirs
