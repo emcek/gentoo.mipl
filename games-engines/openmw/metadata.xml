@@ -5,6 +5,10 @@
 		<email>hasufell@gentoo.org</email>
 		<name>Julian Ospald</name>
 	</maintainer>
+	<maintainer>
+		<email>mplichta@gmail.com</email>
+		<name>Michal Plichta</name>
+	</maintainer>
 	<use>
 <!--		<flag name="devtools">Build development tools</flag>
 <flag name="ffmpeg">Use ffmpeg for sound</flag> -->
