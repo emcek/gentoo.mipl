@@ -29,31 +29,31 @@ src_unpack() {
 	if use main ; then
 		cdrom_get_cds data1.cab
 
-		unshield x "${CDROM_ROOT}"/data1.cab || die "unpacking data1.cab failed!"
-		unshield x "${CDROM_ROOT}"/data2.cab || die "unpacking data2.cab failed!"
+		unshield x /mnt/cdrom_mw/data1.cab || die "unpacking data1.cab failed!"
+		unshield x /mnt/cdrom_mw/data2.cab || die "unpacking data2.cab failed!"
 	fi
 
 	if use bloodmoon ; then
 		cdrom_get_cds data1.cab
 
-		unshield x "${CDROM_ROOT}"/data1.cab || die "unpacking data1.cab failed!"
-		unshield x "${CDROM_ROOT}"/data2.cab || die "unpacking data2.cab failed!"
+		unshield x /mnt/cdrom_bm/data1.cab || die "unpacking data1.cab failed!"
+		unshield x /mnt/cdrom_bm/data2.cab || die "unpacking data2.cab failed!"
 	fi
 
 	if use tribunal ; then
 		cdrom_get_cds data1.cab
 
-		unshield x "${CDROM_ROOT}"/data1.cab || die "unpacking data1.cab failed!"
-		unshield x "${CDROM_ROOT}"/data2.cab || die "unpacking data2.cab failed!"
+		unshield x /mnt/cdrom_tr/data1.cab || die "unpacking data1.cab failed!"
+		unshield x /mnt/cdrom_tr/data2.cab || die "unpacking data2.cab failed!"
 	fi
 }
 
 src_install() {
 	if use main ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}1"/Video
+		doins -r /mnt/cdrom_mw/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Data_Files/Music 
+		doins -r Data_Files/Music
 		doins -r Data_Files/Sound
 		doins -r Data_Files/Splash
 		doins -r Data_Files/Fonts
@@ -61,9 +61,9 @@ src_install() {
 
 	if use bloodmoon ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}2"/Video
+		doins -r /mnt/cdrom_bm/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Data_Files/Music 
+		doins -r Data_Files/Music
 		doins -r Data_Files/Sound
 		doins -r Data_Files/Splash
 		doins -r Data_Files/Fonts
@@ -71,9 +71,9 @@ src_install() {
 
 	if use tribunal ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r "${CDROM_ROOT}3"/Video
+		doins -r /mnt/cdrom_tr/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
-		doins -r Data_Files/Music 
+		doins -r Data_Files/Music
 		doins -r Data_Files/Sound
 		doins -r Data_Files/Splash
 		doins -r Data_Files/Fonts
