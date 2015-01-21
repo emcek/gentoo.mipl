@@ -34,7 +34,7 @@ src_unpack() {
 	fi
 
 	if use bloodmoon ; then
-		cdrom_load_next_cd
+		cdrom_load_next
 		cdrom_get_cds data1.cab
 
 		unshield x "${CDROM_ROOT}"/data1.cab || die "unpacking data1.cab failed!"
@@ -42,7 +42,7 @@ src_unpack() {
 	fi
 
 	if use tribunal ; then
-		cdrom_load_next_cd
+		cdrom_load_next
 		cdrom_get_cds data1.cab
 
 		unshield x "${CDROM_ROOT}"/data1.cab || die "unpacking data1.cab failed!"
@@ -53,7 +53,7 @@ src_unpack() {
 src_install() {
 	if use main ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		cdrom_load_next_cd
+		cdrom_load_next
 		doins -r "${CDROM_ROOT}"/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
 		doins -r Data_Files/Music Data_Files/Sound Data_Files/Splash Data_Files/Fonts
