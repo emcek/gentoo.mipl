@@ -23,7 +23,7 @@ DEPEND="app-arch/unshield"
 S=${WORKDIR}
 
 CHECKREQS_DISK_BUILD="1900M"
-CHECKREQS_DISK_USR="900M"
+CHECKREQS_DISK_USR="1100M"
 
 src_unpack() {
 	if use main ; then
