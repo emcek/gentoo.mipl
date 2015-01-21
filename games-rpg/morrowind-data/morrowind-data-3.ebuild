@@ -61,7 +61,7 @@ src_install() {
 
 	if use bloodmoon ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r /mnt/cdrom_bm/Video
+#		doins -r /mnt/cdrom_bm/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
 		doins -r Data_Files/Music
 		doins -r Data_Files/Sound
@@ -71,7 +71,7 @@ src_install() {
 
 	if use tribunal ; then
 		insinto "${GAMES_DATADIR}"/${PN}
-		doins -r /mnt/cdrom_tr/Video
+#		doins -r /mnt/cdrom_tr/Video
 		doins App_Executables/Morrowind.ini Data_Files/*
 		doins -r Data_Files/Music
 		doins -r Data_Files/Sound
