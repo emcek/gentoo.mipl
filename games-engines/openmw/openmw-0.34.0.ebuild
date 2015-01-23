@@ -13,10 +13,11 @@ SRC_URI="https://github.com/OpenMW/openmw/archive/${P}.tar.gz"
 LICENSE="GPL-3 MIT BitstreamVera OFL-1.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc cdinstall devtools +launcher"
+IUSE="doc devtools"
 
 # XXX static build
-RDEPEND=">=dev-games/mygui-3.2.1
+RDEPEND="app-arch/unshield
+	>=dev-games/mygui-3.2.1
 	>=dev-games/ogre-1.9.0[freeimage,ois,opengl,zip]
 	>=dev-libs/boost-1.46.0
 	dev-libs/tinyxml
@@ -27,12 +28,10 @@ RDEPEND=">=dev-games/mygui-3.2.1
 	media-libs/openal
 	>=sci-physics/bullet-2.80
 	virtual/ffmpeg
-	devtools? ( dev-qt/qtxmlpatterns:4 )
-	launcher? ( app-arch/unshield )"
+	devtools? ( dev-qt/qtxmlpatterns:4 )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	doc? ( app-doc/doxygen media-gfx/graphviz )"
-PDEPEND="cdinstall? ( games-rpg/morrowind-data )"
 
 S=${WORKDIR}/${PN}-${P}
 
@@ -42,6 +41,7 @@ src_configure() {
 		$(cmake-utils_use_build devtools BSATOOL)
 		$(cmake-utils_use_build devtools ESMTOOL)
 		$(cmake-utils_use_build launcher LAUNCHER)
+		-DBUILD_WIZARD=ON
 		-DMWINIIMPORTER=ON
 		-DBUILD_MYGUI_PLUGIN=ON
 		$(cmake-utils_use_build devtools OPENCS)
@@ -90,17 +90,13 @@ pkg_preinst() {
 pkg_postinst() {
 	games_pkg_postinst
 	gnome2_icon_cache_update
-
-	if use !cdinstall ; then
-		elog "You need the original Morrowind Data files. If you haven't"
-		elog "installed them yet, you can install them straight via the"
-		elog "game launcher (launcher USE flag) which is the officially"
-		elog "supported method or by using the"
-		elog "games-rpg/morrowind-data (cdinstall USE flag) package"
-		elog "(this might not work for all morrowind releases out there)."
-	fi
+	
+	elog "You need the original Morrowind Data files. If you haven't"
+	elog "installed them yet, you can install them straight via the"
+	elog "installation wizard which is the officially"
+	elog "supported method (either by using the launcher or by calling"
+	elog "'openmw-wizard' directly)."
 }
-
 pkg_postrm() {
 	gnome2_icon_cache_update
 }
