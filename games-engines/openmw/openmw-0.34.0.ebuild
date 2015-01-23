@@ -90,7 +90,7 @@ pkg_preinst() {
 pkg_postinst() {
 	games_pkg_postinst
 	gnome2_icon_cache_update
-	
+
 	elog "You need the original Morrowind Data files. If you haven't"
 	elog "installed them yet, you can install them straight via the"
 	elog "installation wizard which is the officially"
