@@ -40,7 +40,6 @@ src_configure() {
 		-DBINDIR="${GAMES_BINDIR}"
 		$(cmake-utils_use_build devtools BSATOOL)
 		$(cmake-utils_use_build devtools ESMTOOL)
-		$(cmake-utils_use_build launcher LAUNCHER)
 		-DBUILD_LAUNCHER=ON
 		-DBUILD_WIZARD=ON
 		-DMWINIIMPORTER=ON
