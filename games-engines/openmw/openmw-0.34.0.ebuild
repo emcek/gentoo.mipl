@@ -41,6 +41,7 @@ src_configure() {
 		$(cmake-utils_use_build devtools BSATOOL)
 		$(cmake-utils_use_build devtools ESMTOOL)
 		$(cmake-utils_use_build launcher LAUNCHER)
+		-DBUILD_LAUNCHER=ON
 		-DBUILD_WIZARD=ON
 		-DMWINIIMPORTER=ON
 		-DBUILD_MYGUI_PLUGIN=ON
