@@ -68,9 +68,9 @@ src_prepare() {
 
 src_compile() {
 	./script/build --verbose --build-dir "${T}" || die "Failed to compile"
-	
+
 	"${T}/Atom/resources/app/apm/bin/apm" rebuild || die "Failed to rebuild native module"
-	
+
 	# Setup python path to builtin npm
 	echo "python = $PYTHON" >> "${T}/Atom/resources/app/apm/.apmrc"
 }
