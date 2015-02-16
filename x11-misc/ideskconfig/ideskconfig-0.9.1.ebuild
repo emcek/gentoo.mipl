@@ -39,11 +39,3 @@ src_install() {
 	fperms +x /usr/$(get_libdir)/${PN}/idesk_config.py
 	dodoc ../{README,TODOLIST}
 }
-
-pkg_postinst() {
-	python_mod_optimize "/usr/$(get_libdir)/${PN}"
-}
-
-pkg_postrm() {
-	python_mod_cleanup "/usr/$(get_libdir)/${PN}"
-}
