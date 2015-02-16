@@ -29,7 +29,7 @@ pkg_setup() {
 
 src_prepare() {
 	default
-	python_convert_shebangs -r 2 .
+	python_fix_shebang .
 }
 
 src_install() {
