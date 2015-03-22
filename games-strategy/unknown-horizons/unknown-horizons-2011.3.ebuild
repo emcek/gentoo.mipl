@@ -1,13 +1,13 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI=5
 
-#PYTHON_DEPEND="2:2.7"
 PYTHON_USE_WITH="sqlite berkdb"
 PYTHON_COMPAT=( python2_7 )
 inherit distutils-r1 games python-r1
+
 DESCRIPTION="Anno-like real time strategy game"
 HOMEPAGE="http://www.unknown-horizons.org/"
 
