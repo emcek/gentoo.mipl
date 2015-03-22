@@ -1,8 +1,8 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/pinpoint/pinpoint-0.1.4.ebuild,v 1.1 2011/12/01 17:57:06 leio Exp $
+# $Header: Exp $
 
-EAPI=4
+EAPI=5
 PYTHON_COMPAT=( python2_7 )
 inherit gnome.org git-2 eutils autotools python-r1
 
@@ -20,15 +20,18 @@ EGIT_REPO_URI="http://git.gnome.org/browse/pinpoint"
 
 # rsvg is used for svg-in-pdf -- clubbing it under pdf for now
 RDEPEND=">=media-libs/clutter-1.4:1.0
-		>=dev-libs/glib-2.28:2
-		>=x11-libs/cairo-1.9.4
-		x11-libs/pango
-		x11-libs/gdk-pixbuf:2
-		gstreamer? ( >=media-libs/clutter-gst-2.0:2.0 )
-		pdf? ( gnome-base/librsvg:2 )
-		vim-syntax? ( app-vim/pinpoint-syntax )"
+	>=dev-libs/glib-2.28:2
+	>=x11-libs/cairo-1.9.4
+	x11-libs/pango
+	x11-libs/gdk-pixbuf:2
+	gstreamer? ( >=media-libs/clutter-gst-2.0:2.0 )
+	pdf? ( gnome-base/librsvg:2 )
+	vim-syntax? ( app-vim/pinpoint-syntax )
+"
+
 DEPEND="virtual/pkgconfig
-		${RDEPEND}"
+	${RDEPEND}
+"
 
 pkg_setup() {
 	G2CONF="${G2CONF}"
