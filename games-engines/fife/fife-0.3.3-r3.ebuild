@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI=5
 
-#PYTHON_DEPEND="2:2.7"
-#RESTRICT_PYTHON_ABIS="3.*"
 PYTHON_COMPAT=( python2_7 )
 inherit eutils python-r1 scons-utils
 
