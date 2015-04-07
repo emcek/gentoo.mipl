@@ -112,6 +112,6 @@ src_install() {
 	doins LICENSE
 	doins icudtl.dat
 	doins content_shell.pak
-	doins natives_blob.bin                                                                                                                             
+	doins natives_blob.bin
 	doins snapshot_blob.bin
 }
