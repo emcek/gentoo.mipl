@@ -14,7 +14,7 @@ SRC_URI=""
 EGIT_REPO_URI="git://github.com/atom/atom-shell"
 
 LICENSE="MIT"
-SLOT="0/21"
+SLOT="0/22"
 
 if [[ ${PV} == *9999 ]];then
 	KEYWORDS=""
@@ -45,7 +45,7 @@ DEPEND="
 "
 
 RDEPEND="${DEPEND}
-	!<app-editors/atom-0.120.0
+	!<app-editors/atom-0.188.0
 "
 
 QA_PRESTRIPPED="
@@ -112,4 +112,6 @@ src_install() {
 	doins LICENSE
 	doins icudtl.dat
 	doins content_shell.pak
+	doins natives_blob.bin                                                                                                                             
+	doins snapshot_blob.bin
 }
