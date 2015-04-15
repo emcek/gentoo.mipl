@@ -87,8 +87,7 @@ src_prepare() {
 		|| die "build fix failed"
 
 	# Update ninja files
-	./script/update.py \
-		|| die "update failed"
+	./script/update.py || die "update failed"
 }
 
 src_compile() {
