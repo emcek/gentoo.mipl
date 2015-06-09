@@ -2,7 +2,7 @@ language: python
 python:
         - "3.3"
 env:
-        - PORT_VER="2.2.18"
+        - PORT_VER="2.2.20"
 before_script:
         - mkdir travis-overlay
         - mv !(travis-overlay) travis-overlay/
