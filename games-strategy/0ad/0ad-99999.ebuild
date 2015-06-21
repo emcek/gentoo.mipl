@@ -33,7 +33,7 @@ RDEPEND="
 	net-libs/gloox
 	net-misc/curl
 	sys-libs/zlib
-	virtual/jpeg
+	virtual/jpeg:=
 	virtual/opengl
 	x11-libs/libX11
 	x11-libs/libXcursor
