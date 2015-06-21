@@ -21,9 +21,7 @@ before_script:
     - cp portage-${PORT_VER}/cnf/repos.conf /etc/portage/
     - ln -s /usr/portage/profiles/base/ /etc/portage/make.profile
     - wget "https://www.gentoo.org/dtd/metadata.dtd" -O /usr/portage/distfiles/metadata.dtd
-    - SIZE=`stat -c %s .travis.yml.upstream`
-    - if ! cmp -n $SIZE -s .travis.yml .travis.yml.upstream; then  echo -e "\e[31m !!! .travis.yml outdated! Update available https://github.com/mrueg/repoman-travis \e[0m" > /tmp/update ; fi
     - cd travis-overlay
 script:
-    - ./../spinner.sh "./../portage-${PORT/_VER}/bin/repoman full"
+    - ./../spinner.sh "./../portage-${PORT_VER}/bin/repoman full"
 
