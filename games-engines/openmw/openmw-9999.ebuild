@@ -30,11 +30,11 @@ OPENMW_LIBS="dev-games/mygui
 	virtual/ffmpeg
 	sci-physics/bullet"
 LAUNCHER_LIBS="app-arch/unshield
-	dev-qt/qtcore
-	dev-qt/qtgui"
-OPENCS_LIBS="dev-qt/qtcore
-	dev-qt/qtgui
-	dev-qt/qtxmlpatterns"
+	dev-qt/qtcore:=
+	dev-qt/qtgui:="
+OPENCS_LIBS="dev-qt/qtcore:=
+	dev-qt/qtgui:=
+	dev-qt/qtxmlpatterns:="
 
 HDEPEND=""
 LIBDEPEND="${OPENMW_LIBS}
