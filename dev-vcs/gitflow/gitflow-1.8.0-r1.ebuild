@@ -17,7 +17,7 @@ IUSE="bash-completion"
 RESTRICT="mirror"
 
 DEPEND="
-	app-shells/bash
+	app-shells/bash:=
 "
 RDEPEND="${DEPEND}
 	dev-vcs/git
