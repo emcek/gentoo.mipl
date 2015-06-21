@@ -22,7 +22,7 @@ DEPEND="x11-libs/libXext
 		media-libs/sdl-image[png]
 		opengl? ( virtual/opengl
 				virtual/glu )
-		allegro? ( media-libs/allegro )"
+		allegro? ( media-libs/allegro:= )"
 RDEPEND="${DEPEND}"
 
 src_configure() {
