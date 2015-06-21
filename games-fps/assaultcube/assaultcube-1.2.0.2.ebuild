@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_
 
 LICENSE="ZLIB"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE="dedicated doc server"
 
 RDEPEND="
