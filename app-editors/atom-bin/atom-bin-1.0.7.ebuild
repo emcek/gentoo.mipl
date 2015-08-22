@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -9,7 +9,7 @@ inherit flag-o-matic python-any-r1 eutils unpacker
 
 DESCRIPTION="A hackable text editor for the 21st Century."
 HOMEPAGE="https://atom.io"
-SRC_URI="https://github.com/atom/atom/releases/download/v${PV}/atom-amd64.deb -> atom-adm64-${PV}.deb"
+SRC_URI="https://github.com/atom/atom/releases/download/v${PV}/atom-amd64.deb -> atom-amd64-${PV}.deb"
 
 RESTRICT="primaryuri"
 
