@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -9,7 +9,8 @@ inherit eutils gnome2-utils games
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
-SRC_URI="mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}.source.tar.bz2
+SRC_URI="mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}.tar.bz2
+	mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}_source.tar.bz2
 	http://dev.gentoo.org/~hasufell/distfiles/${PN}.png"
 
 LICENSE="ZLIB"
@@ -20,7 +21,6 @@ IUSE="dedicated doc server"
 RDEPEND="
 	>=net-libs/enet-1.3.0:1.3
 	sys-libs/zlib
-	net-misc/curl
 	!dedicated? (
 		media-libs/libsdl[X,opengl,video]
 		media-libs/libogg
@@ -37,8 +37,7 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/${PV}
 
 src_prepare() {
-	# check pach
-	#epatch "${FILESDIR}"/${PN}-1.1.0.4-QA.patch
+	epatch "${FILESDIR}"/${PN}-1.1.0.4-QA.patch
 
 	# remove unsued stuff
 	rm -r bin_unix/* || die
