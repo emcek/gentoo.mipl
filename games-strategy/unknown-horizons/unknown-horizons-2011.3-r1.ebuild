@@ -19,7 +19,7 @@ SLOT="0"
 IUSE=""
 
 DEPEND="dev-python/pyyaml
-	=games-engines/fife-0.3.3-r3"
+	=games-engines/fife-0.3.3-r4"
 
 RDEPEND="$DEPEND"
 

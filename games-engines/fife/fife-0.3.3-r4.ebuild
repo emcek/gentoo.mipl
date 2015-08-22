@@ -9,7 +9,7 @@ inherit eutils python-r1 scons-utils
 
 DESCRIPTION="Flexible Isometric Free Engine, 2D"
 HOMEPAGE="http://fifengine.de"
-SRC_URI="http://downloads.sourceforge.net/project/${PN}/active/src/${PN}_${PV}${PR}.tar.gz"
+SRC_URI="http://downloads.sourceforge.net/project/${PN}/active/src/${PN}_${PV}r3.tar.gz"
 
 LICENSE="GPL-2"
 
