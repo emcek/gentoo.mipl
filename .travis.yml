@@ -23,4 +23,4 @@ before_script:
     - ln -s /usr/portage/profiles/base/ /etc/portage/make.profile
     - cd travis-overlay
 script:
-    - ./../spinner.sh "python ../portage-${PORTAGE_VER}/bin/repoman full"
+    - ./../spinner.sh "python ../portage-${PORT_VER}/bin/repoman full"
