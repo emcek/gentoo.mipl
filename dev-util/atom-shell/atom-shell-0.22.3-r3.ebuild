@@ -42,7 +42,7 @@ DEPEND="
 	x11-libs/libXtst
 	x11-libs/pango
 	dev-util/ninja
-	sys-libs/ncurses[tinfo]
+	sys-libs/ncurses:5[tinfo]
 "
 
 RDEPEND="${DEPEND}
