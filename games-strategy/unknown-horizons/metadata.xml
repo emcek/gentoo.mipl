@@ -5,7 +5,9 @@
 		<email>totycro@unknown-horizons.org</email>
 		<name>totycro</name>
 	</maintainer>
+	<maintainer>
+		<email>mplichta@gmail.com</email>
+		<name>Michal Plichta</name>
+	</maintainer>
 	<longdescription>Anno-like real time strategy game</longdescription>
-	<use>
-	</use>
 </pkgmetadata>
