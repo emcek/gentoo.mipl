@@ -1,8 +1,5 @@
-<<<<<<<<<<<<<<<<<<<<<<< fife-0.3.3-unbundle-libpng.patch >>>>>>>>>>>>>>>>>>>>>>
-Use local libpng instead of bundled one.
-
-Patch by: Marcel Unbehaun, Azamat H. Hackimov, totycro, Mario Kicherer & Michal Plichta.
-
+Index: image.h
+===================================================================
 --- a/engine/core/video/image.h	(revision 3239)
 +++ b/engine/core/video/image.h	(working copy)
 @@ -27,7 +27,6 @@
@@ -13,7 +10,8 @@ Patch by: Marcel Unbehaun, Azamat H. Hackimov, totycro, Mario Kicherer & Michal 
  
  // FIFE includes
  // These includes are split up in two parts, separated by one empty line
-
+Index: image.cpp
+===================================================================
 --- a/engine/core/video/image.cpp	(revision 3239)
 +++ b/engine/core/video/image.cpp	(working copy)
 @@ -25,6 +25,7 @@
@@ -24,5 +22,3 @@ Patch by: Marcel Unbehaun, Azamat H. Hackimov, totycro, Mario Kicherer & Michal 
  
  // FIFE includes
  // These includes are split up in two parts, separated by one empty line
-
-<<<<<<<<<<<<<<<<<<<<<<< fife-0.3.3-unbundle-libpng.patch >>>>>>>>>>>>>>>>>>>>>>
