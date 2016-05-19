@@ -1,31 +1,33 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
+RESTRICT_PYTHON_ABIS="3.*"
+
 PYTHON_USE_WITH="sqlite"
 
-inherit python-r1 games distutils-r1
+inherit python-r1 distutils-r1
+# was games as well
 
 DESCRIPTION="Anno-like real time strategy game"
 HOMEPAGE="http://www.unknown-horizons.org/"
-
-SRC_URI="mirror://sourceforge/unknownhorizons/${P}.tar.xz"
+SRC_URI="http://github.com/unknown-horizons/unknown-horizons/archive/${PV}.tar.gz"
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 SLOT="0"
 IUSE=""
 
 DEPEND="dev-python/pyyaml
 	dev-python/bsddb3
-	=games-engines/fife-0.3.3-r4"
+	>=games-engines/fife-0.3.5"
 
 RDEPEND="$DEPEND"
 
-S="${WORKDIR}"/${PN}
+#S="${WORKDIR}"/${PN}
 
 pkg_setup() {
 	python_set_active_version 2

@@ -1,40 +1,42 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
+RESTRICT_PYTHON_ABIS="3.*"
+
 inherit eutils python-r1 scons-utils
 
 DESCRIPTION="Flexible Isometric Free Engine, 2D"
 HOMEPAGE="http://fifengine.de"
-SRC_URI="http://downloads.sourceforge.net/project/${PN}/active/src/${PN}_${PV}r3.tar.gz"
+SRC_URI="http://downloads.sourceforge.net/project/${PN}/active/src/${PN}_${PV}.tar.gz"
 
 LICENSE="GPL-2"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 SLOT="0"
 IUSE="debug profile"
 
-RDEPEND="dev-libs/boost
+RDEPEND=">=dev-libs/boost-1.33.1
 	dev-python/pyyaml
-	media-libs/libsdl
-	media-libs/sdl-ttf
-	media-libs/sdl-image[png]
+	>=media-libs/libsdl-1.2.8
+	>=media-libs/sdl-ttf-2.0.0
+	>media-libs/sdl-image-1.2.9[png]
 	media-libs/libvorbis
 	media-libs/libogg
 	media-libs/openal
-	sys-libs/zlib
+	>=sys-libs/zlib-1.2
 	x11-libs/libXcursor
 	x11-libs/libXext
 	dev-games/guichan[sdl,opengl]
 	virtual/opengl
 	virtual/glu"
 DEPEND="${RDEPEND}
-	dev-lang/swig"
+	>=dev-lang/swig-1.3.40"
 
-S=${WORKDIR}/${PN}_${PV}${PR}
+S=${WORKDIR}/${PN}_${PV}
 
 # just setting RESTRICT_PYTHON_ABI is not enough to install only for python2
 pkg_setup() {
@@ -45,12 +47,10 @@ pkg_setup() {
 src_prepare() {
 	rm -r ext #delete bundled libs
 	epatch "${FILESDIR}/${P}-unbundle-libpng.patch"
-	# apply upstream changeset 3949 to remove memory leak warning on console
-	epatch "${FILESDIR}/${P}-fix-memory-leak.patch"
 }
 
 # Compile is only succesfull with one thread
-SCONSOPTS="-j1"
+#SCONSOPTS="-j1"
 
 src_compile() {
 	escons \
