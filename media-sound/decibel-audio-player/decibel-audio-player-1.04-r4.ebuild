@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -16,7 +16,7 @@ IUSE="aac cdda gnome gnome-keyring libnotify musepack wavpack"
 RDEPEND="media-libs/mutagen
 	dev-python/dbus-python
 	dev-python/gst-python:0.10
-	virtual/python-imaging
+	dev-python/pillow
 	>=media-plugins/gst-plugins-meta-0.10-r2:0.10
 	aac? ( media-plugins/gst-plugins-faad:0.10 )
 	cdda? ( || ( media-plugins/gst-plugins-cdio:0.10
