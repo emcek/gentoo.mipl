@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>mplichta@gmail.com</email>
+		<name>Michal Plichta</name>
+		<description>The creator of this ebuild, but not the official maintainer</description>
+	</maintainer>
+	<longdescription>GiGi (aka GG) is a GUI library for OpenGL. It is platform-independent (it runs at least on Linux and Windows, and probably more), compiler-independent (it compiles under at GCC 3.4 or higher and MSVC++ 8.0 SP1 or higher, and probably more), and driver-independent. Reference drivers for SDL and Ogre are provided, and it is straightforward to write one for yourself should you decide to do so.</longdescription>
+	<use>
+		<flag name='devil'>Enable image loading via DevIL.</flag>
+		<flag name='ois'>Enable OIS support.</flag>
+		<flag name='ogre'>Enable OGRE support.</flag>
+	</use>
+</pkgmetadata>

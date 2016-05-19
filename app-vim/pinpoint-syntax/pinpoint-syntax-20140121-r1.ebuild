@@ -1,0 +1,15 @@
+# Copyright 1999-2015 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
+EAPI=5
+
+inherit vim-plugin
+
+DESCRIPTION="vim plugin: Syntax highlighting for PinPoint"
+HOMEPAGE="https://github.com/emcek/vim-pinpoint"
+SRC_URI="https://github.com/emcek/vim-pinpoint/archive/${PV}.tar.gz -> ${P}.tar.gz"
+LICENSE="vim"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris"
+
+S="${WORKDIR}/vim-pinpoint-${PV}"
