@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -6,7 +6,7 @@ EAPI=5
 
 inherit autotools git-2
 
-DESCRIPTION="Lightweight cross platform GUI library written in C++ specifically designed for games"
+DESCRIPTION="Lightweight cross platform GUI C++ library designed for games"
 HOMEPAGE="http://fifengine.github.io/fifechan/"
 SRC_URI=""
 EGIT_REPO_URI="git://github.com/fifengine/fifechan.git"
@@ -37,4 +37,3 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install
 }
-
