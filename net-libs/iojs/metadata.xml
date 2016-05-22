@@ -6,4 +6,8 @@
 		<name>Michal Plichta</name>
 	</maintainer>
 	<longdescription>An npm compatible platform originally based on node.js</longdescription>
+	<use>
+		<flag name="npm">Enable NPM package manager</flag>
+		<flag name="snapshot">Enable snapshot</flag>
+	</use>
 </pkgmetadata>
