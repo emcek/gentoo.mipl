@@ -4,8 +4,7 @@
 
 EAPI=5
 
-inherit eutils gnome2-utils
-# games
+inherit eutils gnome2-utils games
 
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
