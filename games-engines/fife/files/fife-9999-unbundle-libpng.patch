@@ -1,22 +1,8 @@
-<<<<<<<<<<<<<<<<<<<<<<< fife-9999-unbundle-libpng.patch >>>>>>>>>>>>>>>>>>>>>>>
-Use local libpng instead of bundled one.
-
-Patch by: Marcel Unbehaun, Azamat H. Hackimov, totycro, Mario Kicherer & Michal Plichta.
-
---- a/engine/core/video/image.h	(revision 3239)
-+++ b/engine/core/video/image.h	(working copy)
-@@ -27,7 +27,6 @@
- 
- // 3rd party library includes
- #include <SDL.h>
--#include <png.h>
- 
- // FIFE includes
- // These includes are split up in two parts, separated by one empty line
-
---- a/engine/core/video/image.cpp	(revision 3239)
-+++ b/engine/core/video/image.cpp	(working copy)
-@@ -25,6 +25,7 @@
+diff --git a/engine/core/video/image.cpp b/engine/core/video/image.cpp
+index a47db41..c3edb60 100644
+--- a/engine/core/video/image.cpp
++++ b/engine/core/video/image.cpp
+@@ -26,6 +26,7 @@
  
  // 3rd party library includes
  #include <SDL.h>
@@ -24,5 +10,15 @@ Patch by: Marcel Unbehaun, Azamat H. Hackimov, totycro, Mario Kicherer & Michal 
  
  // FIFE includes
  // These includes are split up in two parts, separated by one empty line
-
-<<<<<<<<<<<<<<<<<<<<<<< fife-9999-unbundle-libpng.patch >>>>>>>>>>>>>>>>>>>>>>>
+diff --git a/engine/core/video/image.h b/engine/core/video/image.h
+index 54c92f5..b166ad5 100644
+--- a/engine/core/video/image.h
++++ b/engine/core/video/image.h
+@@ -28,7 +28,6 @@
+ // 3rd party library includes
+ #include <SDL.h>
+ #define PNG_SKIP_SETJMP_CHECK
+-#include <png.h>
+ 
+ // FIFE includes
+ // These includes are split up in two parts, separated by one empty line

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer>
+<maintainer type="person">
 	<email>krytzz@soylent.eu</email>
 	<name>steffen stramm</name>
 </maintainer>
-<maintainer>
+<maintainer type="person">
 	<email>mplichta@gmail.com</email>
 	<name>Michal Plichta</name>
 </maintainer>
+<maintainer type="person">
+	<email>nado@troglodyte.be</email>
+	<name>Corentin Pazdera</name>
+</maintainer>
 <use>
 	<flag name="fifechan">Enable <pkg>games-engines/fifechan</pkg> gui subsystem</flag>
-	<flag name="tinyxml">Forces fife to use the local version of tinyxml that ships with fife</flag>
 	<flag name="zip">Enable ZIP archive support</flag>
 </use>
 </pkgmetadata>
