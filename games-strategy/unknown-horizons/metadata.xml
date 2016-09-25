@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer>
+	<maintainer type="person">
 		<email>totycro@unknown-horizons.org</email>
 		<name>totycro</name>
 	</maintainer>
-	<maintainer>
+	<maintainer type="person">
 		<email>mplichta@gmail.com</email>
 		<name>Michal Plichta</name>
+	</maintainer>
+	<maintainer type="person">
+		<email>nado@troglodyte.be</email>
+		<name>Corentin Pazdera</name>
 	</maintainer>
 	<longdescription>Anno-like real time strategy game</longdescription>
 </pkgmetadata>
